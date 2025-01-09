@@ -1,0 +1,46 @@
+{
+  "about": {
+    "title": "About me",
+    "headingLevel": 2,
+    "paragraphs": [
+      "I'm a software engineer with a passion for building tools that simplify complexity. Whether it's improving fintech platforms or streamlining operations for businesses, I focus on creating meaningful solutions. Outside of coding, I'm a proud chicken dad, a PC builder, and a beginner gardener."
+    ]
+  },
+  "yext": {
+    "title": "Yext",
+    "headingLevel": 3,
+    "paragraphs": [
+      "At Yext, I had full ownership of designing and delivering custom store locator websites for major brands, optimizing them for local SEO to boost visibility and user engagement. With a typical turnaround time of 2-3 weeks per site, I consistently balanced speed and precision to ensure high-quality results. I also developed a CLI tool using Bash and Go to interface with Smartling's API, automating the generation of localization files and streamlining translation workflows. Additionally, I collaborated with iOS and Android developers to integrate advertising SDKs into apps with a combined 5 million monthly active users, further showcasing my versatility and ability to drive impactful solutions."
+    ]
+  },
+  "fundrise": {
+    "title": "Fundrise",
+    "headingLevel": 3,
+    "paragraphs": [
+      "At Fundrise, I played a key role in designing and implementing features that enhanced user engagement and streamlined experiences for our investors. One of my primary contributions was co-developing the user account levels feature, which encouraged increased investment activity by personalizing the platform's offerings. I also led the redesign of the Transactions page, improving the clarity of transaction details and creating a more intuitive user experience. Beyond front-facing features, I developed internal reporting tools that enabled data-driven decision-making and boosted team efficiency. These projects allowed me to combine technical expertise with a user-focused mindset to drive meaningful results for both the company and its investors."
+    ]
+  },
+  "entrepreneur": {
+    "title": "Entrepreneurship",
+    "headingLevel": 3,
+    "paragraphs": [
+      "As a co-owner of Pheasant Field Bed and Breakfast and the COO of Freedom Analytics, I honed my leadership and problem-solving skills in dynamic, fast-paced environments.",
+      "At Freedom Analytics, I managed a team of 100 employees, including operations managers and fleet managers, while developing automated processes that reduced task times by 50-90%, demonstrating my ability to streamline operations and adapt to evolving challenges.",
+      "At Pheasant Field Bed and Breakfast, I've taken on responsibilities spanning day-to-day operations, guest services, and systems management, ensuring seamless experiences for both customers and staff. These entrepreneurial ventures have equipped me with a strong ability to think strategically, lead diverse teams, and thrive under pressure—transferable skills that complement my technical expertise and prepare me to excel in any software engineering role."
+    ]
+  },
+  "next": {
+    "title": "What's next",
+    "headingLevel": 2,
+    "paragraphs": [
+      "I'm excited to return to the tech industry and continue my journey as a software engineer. Although I spent the past several years immersed in entrepreneurship, managing and growing businesses, I never stepped away from my passion for programming. I've consistently worked on projects to sharpen my skills and learned new technologies like Svelte, Firebase, and React 19, ensuring I stayed current with industry trends. My entrepreneurial experience has given me a deeper understanding of leadership, adaptability, and delivering impactful solutions, which I'm eager to combine with my technical expertise to contribute to meaningful projects. I'm looking forward to applying these skills to solve complex problems, collaborate with innovative teams, and create technology that makes a difference."
+    ]
+  },
+  "extra": {
+    "title": "I am Kyle",
+    "headingLevel": 2,
+    "paragraphs": [
+      "I am surpeme"
+    ]
+  }
+}
