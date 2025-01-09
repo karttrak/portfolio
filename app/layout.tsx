@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react"
 import { Genos } from "next/font/google";
 import "./globals.css";
 
@@ -19,6 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Analytics />
       <body
         className={`relative grid gap-16 items-center justify-items-center pt-24 min-h-screen overflow-x-hidden ${genosSans.variable} antialiased`}
       >
