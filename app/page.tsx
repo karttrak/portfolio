@@ -100,7 +100,7 @@ export default function Home() {
           <div>
             <Image
               className=""
-              src="/ferragamo-thumbnail.jpg"
+              src="/projects/ferragamo-thumbnail.jpg"
               width={300}
               height={280}
               alt="Example image of a location detail page for a Salvatore Ferragamo store."
