@@ -43,7 +43,7 @@ export default function TextSection(props: Props) {
   return (
     <section className={sectionClasses}>
       {props.headingLevel === 2 ?
-        <h2 className="lg:mb-12 w-full text-center text-5xl text-yellow-400 font-medium">{props.title}</h2>
+        <h2 className="lg:mb-12 w-full text-center text-5xl text-[--heading] font-medium">{props.title}</h2>
         : null}
 
       {paragraphElements ?

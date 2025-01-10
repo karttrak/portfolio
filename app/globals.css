@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --background: #CADCE4;
+  --background: #DAECF4;
   --foreground: #1F282D;
-  --heading: hsl(40, 63%, 30%);
+  --heading: #A87B21;
   --starcolor: hsl(199, 20%, 60%);
 }
 
@@ -13,7 +13,7 @@
   :root {
     --background: #1F282D;
     --foreground: #CADCE4;
-    --heading: hsl(40, 63%, 58%);
+    --heading: #D8AB51;
     --starcolor: hsl(199, 20%, 42%);
   }
 }

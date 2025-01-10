@@ -18,8 +18,8 @@ export default function Home() {
       <section className="relative flex flex-col md:flex-row justify-center items-center gap-20 py-32 px-8 md:px-20 lg:px-32 w-full">
         {starIcons}
         <div className="relative m-auto md:m-0 md:w-2/3 max-w-[32rem] text-center text-4xl text-pretty font-genos font-medium z-2">
-          <div className="absolute w-[110%] h-[110%] -left-[5%] -top-[5%] bg-[#CADCE4] dark:bg-[#1F282D] blur-xl rounded-xl"></div>
-          <h1 className="relative text-5xl text-yellow-400">
+          <div className="absolute w-[110%] h-[110%] -left-[5%] -top-[5%] bg-[--background] blur-xl rounded-xl"></div>
+          <h1 className="relative text-5xl text-[--heading]">
             Kyle Thornburgh
           </h1>
           <h2 className="relative text-4xl">Full-stack engineer</h2>
@@ -28,7 +28,7 @@ export default function Home() {
           </p>
         </div>
         <div className="relative m-auto md:m-0 w-64 h-60 -z-1">
-          <div className="absolute w-[110%] h-[110%] -left-[5%] -top-[5%] bg-[#CADCE4] dark:bg-[#1F282D] blur-xl rounded-full"></div>
+          <div className="absolute w-[110%] h-[110%] -left-[5%] -top-[5%] bg-[--background] blur-xl rounded-full"></div>
           <Image
             className="relative w-64 h-60 -z-1"
             src="/sloth.svg"
@@ -46,7 +46,7 @@ export default function Home() {
           <Skills />
         </TextSection>
 
-        <h2 className="mt-12 lg:mb-12 w-full text-center text-5xl text-yellow-400 font-medium">Experience</h2>
+        <h2 className="mt-12 lg:mb-12 w-full text-center text-5xl text-[--foreground] dark:text-[--heading] font-medium">Experience</h2>
 
         <TextSection {...sections.yext}>
           <Image
@@ -107,7 +107,7 @@ export default function Home() {
 
 
         <section className="section">
-          <h2 className="mb-12 lg:mb-16 w-full text-center text-5xl text-yellow-400 font-medium">Projects</h2>
+          <h2 className="mb-12 lg:mb-16 w-full text-center text-5xl text-[--heading] font-medium">Projects</h2>
 
         </section>
         <section className="section">
