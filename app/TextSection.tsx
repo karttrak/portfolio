@@ -21,14 +21,15 @@ export default function TextSection(props: Props) {
     "items-center",
     "gap-y-12",
     "py-20",
+    "w-full",
     "lg:gap-y-0",
     "lg:gap-x-20",
     props.reverse && "flex-row-reverse",
   )
 
-  const contentClasses = clsx(
+  const contentContainerClasses = clsx(
     "space-y-8",
-    "max-w-[80ch]",
+    "max-w-[70ch]",
     props.children && "lg:w-1/3 grow"
   )
 
@@ -36,7 +37,7 @@ export default function TextSection(props: Props) {
     "flex",
     "justify-center",
     "text-center",
-    "max-w-[80ch]",
+    "max-w-[70ch]",
     paragraphElements && "lg:w-1/3",
   )
 
@@ -47,7 +48,7 @@ export default function TextSection(props: Props) {
         : null}
 
       {paragraphElements ?
-        <div className={contentClasses}>
+        <div className={contentContainerClasses}>
           {props.headingLevel === 3 ?
             <h3 className="mb-8 w-full text-center lg:text-left text-5xl font-medium">{props.title}</h3>
             : null}
