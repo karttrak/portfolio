@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "./Header";
 import TextSection from "./TextSection";
+import Skills from "./Skills";
 
 import StarSvg from "./components/StarSvg";
 
@@ -42,14 +43,7 @@ export default function Home() {
 
       <main className="flex flex-col p-8 items-center md:items-start">
         <TextSection {...sections.about}>
-          <Image
-            className=""
-            src="./ufo.svg"
-            alt="Jupiter"
-            width={300}
-            height={300}
-            aria-hidden
-          />
+          <Skills />
         </TextSection>
 
         <h2 className="mt-12 lg:mb-12 w-full text-center text-5xl text-yellow-400 font-medium">Experience</h2>
