@@ -14,25 +14,22 @@ export default function Skills() {
       imageUrl: "skills/html-logo.svg"
     },
     {
-      label: "CSS",
-      imageUrl: "skills/css-logo.svg"
-    },
-    {
-      label: "TypeScript",
-      imageUrl: "skills/typescript-logo.svg"
-    },
-    {
-      label: "React",
-      imageUrl: "skills/react-logo.svg"
-    },
-    {
       label: "Next.js",
       imageUrl: "skills/nextjs-logo.svg",
       invertOnDarkMode: true
     },
     {
-      label: "Svelte",
-      imageUrl: "skills/Svelte-logo.svg"
+      label: "MySQL",
+      imageUrl: "skills/mysql-logo.svg",
+      invertOnDarkMode: true
+    },
+    {
+      label: "CSS",
+      imageUrl: "skills/css-logo.svg"
+    },
+    {
+      label: "React",
+      imageUrl: "skills/react-logo.svg"
     },
     {
       label: "Java",
@@ -43,34 +40,29 @@ export default function Skills() {
       imageUrl: "skills/firebase-logo.svg"
     },
     {
-      label: "MySQL",
-      imageUrl: "skills/mysql-logo.svg",
-      invertOnDarkMode: true
+      label: "TypeScript",
+      imageUrl: "skills/typescript-logo.svg"
     },
     {
-      label: "Git",
-      imageUrl: "skills/git-logo.svg"
+      label: "Svelte",
+      imageUrl: "skills/Svelte-logo.svg"
     },
-    // {
-    //   label: "Vite",
-    //   imageUrl: "skills/vite-logo.svg"
-    // },
-    // {
-    //   label: "Accessibility",
-    //   imageUrl: "skills/a11y-logo.svg",
-    //   invertOnDarkMode: true
-    // },
+    {
+      label: "Accessibility",
+      imageUrl: "skills/a11y-logo.svg",
+      invertOnDarkMode: true
+    },
   ]
 
   const skillElements = skills.map((skill, i) => {
-    const skillClasses = clsx(skill.invertOnDarkMode && "dark:invert")
+    const skillClasses = clsx("size-12", "sm:size-16", skill.invertOnDarkMode && "dark:invert")
     const styles = {
       backgroundImage: "linear-gradient(to bottom right, magenta, cyan)",
       gridRow: i % 7 == 0 ? "2 / span 2" : undefined
     }
 
     return (
-      <li key={i} style={styles} className="row-span-2 p-0.5 text-sm rounded-full size-24">
+      <li key={i} style={styles} className="row-span-2 p-0.5 text-sm sm:text-base rounded-full size-28 sm:size-32">
         <div className="flex flex-col justify-center items-center p-2 w-full h-full rounded-full bg-[--background]">
           <Image
             className={skillClasses}
