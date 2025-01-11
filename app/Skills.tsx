@@ -1,6 +1,8 @@
 import Image from "next/image"
 import clsx from "clsx"
 
+import CircleSvg from "./components/CircleSvg"
+
 export default function Skills() {
   type Skill = {
     label: string,
@@ -57,22 +59,20 @@ export default function Skills() {
   const skillElements = skills.map((skill, i) => {
     const skillClasses = clsx("size-12", "sm:size-16", skill.invertOnDarkMode && "dark:invert")
     const styles = {
-      backgroundImage: "linear-gradient(to bottom right, magenta, cyan)",
       gridRow: i % 7 == 0 ? "2 / span 2" : undefined
     }
 
     return (
-      <li key={i} style={styles} className="row-span-2 p-0.5 text-sm sm:text-base rounded-full size-28 sm:size-32">
-        <div className="flex flex-col justify-center items-center p-2 w-full h-full rounded-full bg-[--background]">
-          <Image
-            className={skillClasses}
-            src={skill.imageUrl}
-            width={50}
-            height={50}
-            alt={`${skill.label} logo`}
-          />
-          {skill.label}
-        </div>
+      <li key={i} style={styles} className="relative row-span-2 flex flex-col justify-center items-center text-sm sm:text-base size-28 sm:size-32">
+        <CircleSvg className="absolute w-full" />
+        <Image
+          className={skillClasses}
+          src={skill.imageUrl}
+          width={50}
+          height={50}
+          alt={`${skill.label} logo`}
+        />
+        {skill.label}
       </li>
     )
   })
