@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <Analytics />
       <body
-        className={`relative grid gap-16 items-center justify-items-center pt-24 min-h-screen overflow-x-hidden ${genosSans.variable} antialiased`}
+        className={`relative grid gap-16 items-center justify-items-center min-h-screen overflow-x-hidden ${genosSans.variable} antialiased`}
       >
         {children}
       </body>

@@ -15,7 +15,7 @@ export default function Home() {
       <Header />
 
       {/* HERO SECTION START */}
-      <section className="relative flex flex-col md:flex-row justify-center items-center gap-20 py-32 px-8 md:px-20 lg:px-32 w-full">
+      <section className="relative flex flex-col md:flex-row justify-center items-center gap-20 py-32 px-8 md:px-20 lg:px-32 w-full h-screen">
         {starIcons}
         <div className="relative m-auto md:m-0 md:w-2/3 max-w-[32rem] text-center text-4xl text-pretty font-genos font-medium z-2">
           <div className="absolute w-[110%] h-[110%] -left-[5%] -top-[5%] bg-[--background] blur-xl rounded-xl"></div>
@@ -41,10 +41,21 @@ export default function Home() {
       </section >
       {/* HERO SECTION END */}
 
-      <main className="flex flex-col p-8 items-center md:items-start">
-        <TextSection {...sections.about}>
-          <Skills />
-        </TextSection>
+      <main className="flex flex-col p-8 items-center md:items-start max-w-[75rem]">
+
+        {/* ABOUT SECTION START */}
+        <section className="flex flex-col md:flex-wrap md:flex-row justify-center items-center gap-y-12 py-20 w-full md:gap-y-0 md:gap-x-12 lg:gap-x-20">
+          <h2 className="lg:mb-12 w-full text-center text-5xl text-[--heading] font-medium">{sections.about.title}</h2>
+
+          <div className="space-y-8 max-w-[70ch] flex-1">
+            <p className="text-pretty">{sections.about.paragraphs}</p>
+          </div>
+
+          <div className="flex justify-center text-center max-w-[70ch] flex-1">
+            <Skills />
+          </div>
+        </section>
+        {/* ABOUT SECTION END */}
 
         <h2 className="mt-12 lg:mb-12 w-full text-center text-5xl text-[--foreground] dark:text-[--heading] font-medium">Experience</h2>
 
