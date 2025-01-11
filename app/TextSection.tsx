@@ -4,6 +4,7 @@ import clsx from "clsx"
 type Props = {
   title: string,
   headingLevel: number,
+  className?: string,
   paragraphs?: string[],
   reverse?: boolean
   children?: React.ReactNode
@@ -25,12 +26,13 @@ export default function TextSection(props: Props) {
     "lg:gap-y-0",
     "lg:gap-x-20",
     props.reverse && "flex-row-reverse",
+    props.className,
   )
 
   const contentContainerClasses = clsx(
     "space-y-8",
     "max-w-[70ch]",
-    props.children && "lg:w-1/3 grow"
+    props.children && "lg:basis-1/3 grow"
   )
 
   const childrenContainerClasses = clsx(
@@ -38,7 +40,7 @@ export default function TextSection(props: Props) {
     "justify-center",
     "text-center",
     "max-w-[70ch]",
-    paragraphElements && "lg:w-1/3",
+    paragraphElements && "lg:basis-1/3",
   )
 
   return (

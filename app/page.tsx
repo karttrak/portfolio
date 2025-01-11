@@ -57,7 +57,7 @@ export default function Home() {
         </section>
         {/* ABOUT SECTION END */}
 
-        <h2 className="mt-12 lg:mb-12 w-full text-center text-5xl text-[--foreground] dark:text-[--heading] font-medium">Experience</h2>
+        <h2 className="mt-12 w-full text-center text-5xl text-[--heading] font-medium">Experience</h2>
 
         <TextSection {...sections.yext}>
           <Image
@@ -89,15 +89,6 @@ export default function Home() {
           />
         </TextSection>
 
-        <TextSection {...sections.next} />
-
-        <TextSection
-          title="Contact"
-          headingLevel={2}
-        >
-          <p>If you&apos;d like to connect or discuss how I can contribute to your organization, please don&apos;t hesitate to reach out. <a className="hover:text-blue-400 underline" href="mailto:thornburghkyle+dev@gmail.com" target="_blank" tabIndex={1}>Send me an email</a>.</p>
-        </TextSection>
-
         <TextSection
           title="Projects"
           headingLevel={2}
@@ -116,19 +107,14 @@ export default function Home() {
           </div>
         </TextSection>
 
+        <TextSection className="text-center" {...sections.next} />
 
-        <section className="section">
-          <h2 className="mb-12 lg:mb-16 w-full text-center text-5xl text-[--heading] font-medium">Projects</h2>
-
-        </section>
-        <section className="section">
-          <h2 className="text-5xl">
-            Contact
-          </h2>
-          <p className="text-pretty">
-            If you&apos;d like to connect or discuss how I can contribute to your organization, please don&apos;t hesitate to reach out. <a href="mailto:thornburghkyle+dev@gmail.com">Send me an email.</a>
-          </p>
-        </section>
+        <TextSection
+          title="Contact"
+          headingLevel={2}
+        >
+          <p>If you&apos;d like to connect or discuss how I can contribute to your organization, please don&apos;t hesitate to reach out. <a className="hover:text-blue-400 underline" href="mailto:thornburghkyle+dev@gmail.com" target="_blank" tabIndex={1}>Send me an email</a>.</p>
+        </TextSection>
       </main>
       <footer className="flex gap-6 flex-wrap items-center justify-center">
         <a
