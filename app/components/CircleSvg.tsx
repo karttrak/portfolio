@@ -1,8 +1,8 @@
-type ComponentProps = {
+type Props = {
   className: string
 }
 
-export default function CircleSvg(props: ComponentProps) {
+export default function CircleSvg(props: Props) {
   return (
     <svg className={props.className} viewBox="-50 -50 100 100" aria-hidden>
       <defs>
