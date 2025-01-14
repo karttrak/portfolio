@@ -5,7 +5,7 @@ type Props = {
   title: string,
   headingLevel: number,
   className?: string,
-  paragraphs?: string[],
+  paragraphs: string[],
   reverse?: boolean
   children?: React.ReactNode
 }

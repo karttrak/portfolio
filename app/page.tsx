@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Header from "./Header";
+import Section from "./Section";
 import TextSection from "./TextSection";
 import Skills from "./Skills";
+import Project from "./Project";
 
 import StarSvg from "./components/StarSvg";
 
@@ -89,32 +91,42 @@ export default function Home() {
           />
         </TextSection>
 
-        <TextSection
+        <Section
           title="Projects"
           headingLevel={2}
         >
-          <div>
-            <Image
-              className=""
-              src="/projects/ferragamo-thumbnail.jpg"
-              width={300}
-              height={280}
-              alt="Example image of a location detail page for a Salvatore Ferragamo store."
-            />
-            <p className="text-pretty">
-              Sample location page for a Salvatore Ferragamo store. Page is fully responsive to support anything from a mobile device to an ultrawide monitor. The page adheres to all WCAG 2.0 Level AA rules for accessibility and is optimized for local SEO using structured data markup in the form of JSON-LD in the HTML.
-            </p>
-          </div>
-        </TextSection>
+          <Project
+            className="max-w-[80ch]"
+            title="Salvatore Ferragamo Store Pages"
+            description="Sample location page for a Salvatore Ferragamo store. Page is fully responsive, optimized for local SEO, and adheres to all WCAG 2.0 Level AA rules for accessibility."
+            imageUrl="/projects/ferragamo-thumbnail.jpg"
+            linkUrl="/projects/ferragamo-showcase.jpg"
+          />
+          <Project
+            className="max-w-[80ch]"
+            title="Fundrise Transactions"
+            description="I implemented the redesign for the Transactions page in 2018."
+            imageUrl="/projects/fundrise-desktop.png"
+            linkUrl="/projects/fundrise-desktop.png"
+          />
+          <Project
+            className="max-w-[80ch]"
+            title="Website for Freedom Analytics"
+            description="I built a website with SvelteKit that displayed hiring information about the company and directed people to apply by emailing the recruiter."
+            imageUrl="/projects/freedom-thumbnail.png"
+            linkUrl="/projects/freedom-showcase.png"
+          />
+        </Section>
 
         <TextSection className="text-center" {...sections.next} />
 
-        <TextSection
+        <Section
           title="Contact"
           headingLevel={2}
+          className="max-w-[80ch]"
         >
-          <p>If you&apos;d like to connect or discuss how I can contribute to your organization, please don&apos;t hesitate to reach out. <a className="hover:text-blue-400 underline" href="mailto:thornburghkyle+dev@gmail.com" target="_blank" tabIndex={1}>Send me an email</a>.</p>
-        </TextSection>
+          <p>If you&apos;d like to connect or discuss how I can contribute to your organization, please don&apos;t&nbsp;hesitate to reach out. <a className="hover:text-blue-400 underline" href="mailto:thornburghkyle+dev@gmail.com" target="_blank" tabIndex={1}>Send&nbsp;me&nbsp;an&nbsp;email</a>.</p>
+        </Section>
       </main>
       <footer className="flex gap-6 flex-wrap items-center justify-center">
         <a
