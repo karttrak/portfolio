@@ -96,24 +96,24 @@ export default function Home() {
           headingLevel={2}
         >
           <Project
-            className="max-w-[80ch]"
-            title="Salvatore Ferragamo Store Pages"
-            description="Sample location page for a Salvatore Ferragamo store. Page is fully responsive, optimized for local SEO, and adheres to all WCAG 2.0 Level AA rules for accessibility."
-            imageUrl="/projects/ferragamo-thumbnail.jpg"
+            className="mt-8 md:mt-0"
+            title="Salvatore Ferragamo location pages"
+            description="Developed as part of Yext's [Pages](https://www.yext.com/platform/pages) product, this project is a fully responsive website that helps users locate their nearest Ferragamo store and view key store details. Built using Soy templates, SCSS, and CoffeeScript, the website is optimized for local SEO and adheres to WCAG 2.0 Level AA accessibility standards, ensuring a seamless and inclusive user experience."
+            imageUrl="/projects/ferragamo-showcase.jpg"
             linkUrl="/projects/ferragamo-showcase.jpg"
           />
           <Project
-            className="max-w-[80ch]"
-            title="Fundrise Transactions"
-            description="I implemented the redesign for the Transactions page in 2018."
+            className="mt-8 md:mt-0"
+            title="Fundrise Transactions page"
+            description="I implemented the redesign of the Transactions page for [Fundrise](https://fundrise.com/), enhancing usability and user experience on both mobile and desktop platforms. Transaction details are initially hidden for ease of navigation, with users able to expand them as needed, ensuring a seamless and intuitive experience for investors. The project utilized Java and MySQL for the backend, with AngularJS powering the frontend."
             imageUrl="/projects/fundrise-desktop.png"
             linkUrl="/projects/fundrise-desktop.png"
           />
           <Project
-            className="max-w-[80ch]"
-            title="Website for Freedom Analytics"
-            description="I built a website with SvelteKit that displayed hiring information about the company and directed people to apply by emailing the recruiter."
-            imageUrl="/projects/freedom-thumbnail.png"
+            className="mt-8 md:mt-0"
+            title="Freedom Analytics website"
+            description="Designed and developed a website for Freedom Analytics to streamline hiring efforts. The landing page highlighted key facts about the company and showcased benefits, while the Careers page provided comprehensive details for the job and encouraged candidates apply. Built with SvelteKit and deployed on Netlify, the website offered a modern, responsive, and user-friendly experience to attract talent."
+            imageUrl="/projects/freedom-showcase.png"
             linkUrl="/projects/freedom-showcase.png"
           />
         </Section>
@@ -123,14 +123,50 @@ export default function Home() {
         <Section
           title="Contact"
           headingLevel={2}
-          className="max-w-[80ch]"
+          className="max-w-[80ch] text-center text-pretty"
         >
-          <p>If you&apos;d like to connect or discuss how I can contribute to your organization, please don&apos;t&nbsp;hesitate to reach out. <a className="hover:text-blue-400 underline" href="mailto:thornburghkyle+dev@gmail.com" target="_blank" tabIndex={1}>Send&nbsp;me&nbsp;an&nbsp;email</a>.</p>
+          <p>
+            Interested in collaborating or learning more about my work? Let&apos;s connect!
+          </p>
+          <div className="flex gap-8">
+            <a
+              className="flex items-center gap-2"
+              href="https://www.linkedin.com/in/kyle-thornburgh/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                aria-hidden
+                className="w-5 dark:invert"
+                src="/linkedin.svg"
+                alt="linkedIn Logo"
+                width={20}
+                height={20}
+              />
+              My LinkedIn
+            </a>
+            <a
+              className="flex items-center gap-2"
+              href="mailto:thornburghkyle+dev@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                aria-hidden
+                className="w-5 dark:invert"
+                src="/email.svg"
+                alt="Email icon"
+                width={20}
+                height={20}
+              />
+              Send&nbsp;an&nbsp;email
+            </a>
+          </div>
         </Section>
       </main>
       <footer className="flex gap-6 flex-wrap items-center justify-center">
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          className="flex items-center gap-2"
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
@@ -145,7 +181,7 @@ export default function Home() {
           Learn
         </a>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          className="flex items-center gap-2"
           href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"

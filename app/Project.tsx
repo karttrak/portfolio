@@ -1,5 +1,6 @@
 import Image from "next/image"
 import clsx from "clsx"
+import ReactMarkdown from "react-markdown"
 
 type Props = {
   title: string,
@@ -11,8 +12,8 @@ type Props = {
 
 export default function Project(props: Props) {
   return (
-    <div className={clsx(props.className, "flex flex-col gap-8 sm:flex-row items-center")}>
-      <div className="group relative w-full sm:basis-1/2 md:basis-1/3">
+    <div className={clsx(props.className, "flex flex-col gap-8 md:flex-row items-center")}>
+      <div className="group relative w-full md:basis-1/2 xl:basis-2/5">
         <a href={props.linkUrl} target="_blank">
           <Image src="/new-tab-icon.svg"
             alt="Open in new tab"
@@ -22,15 +23,17 @@ export default function Project(props: Props) {
           />
           <Image src={props.imageUrl}
             alt={`Thumbnail image of ${props.title}`}
-            className="w-full shadow-lg"
+            className="w-full max-h-96 lg:max-h-80 xl:max-h-64 object-cover object-top shadow-lg"
             width={550}
             height={300}
           />
         </a>
       </div>
-      <div className="flex flex-col gap-y-8 text-left sm:basis-1/2 md:basis-2/3">
-        <span className="text-3xl font-genos">{props.title}</span>
-        <p className="text-pretty">{props.description}</p>
+      <div className="flex flex-col gap-y-8 text-left md:basis-1/2 xl:basis-3/5">
+        <span className="text-3xl font-medium font-genos">{props.title}</span>
+        <ReactMarkdown linkTarget="_blank">
+          {props.description}
+        </ReactMarkdown>
       </div>
     </div>
   )
