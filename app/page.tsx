@@ -1,12 +1,16 @@
-import Image from "next/image";
+// Layout / Sections
 import Header from "./Header";
-import Section from "./Section";
-import TextSection from "./TextSection";
 import Skills from "./Skills";
 import Project from "./Project";
+import Footer from "./Footer";
 
+// Reusable components
+import Section from "./components/Section";
+import TextSection from "./components/TextSection";
 import StarSvg from "./components/StarSvg";
+import Image from "next/image";
 
+// Data
 import sections from "./homepage.json"
 
 export default function Home() {
@@ -196,6 +200,7 @@ export default function Home() {
           Go to nextjs.org →
         </a>
       </footer>
+      <Footer />
     </>
   );
 }
