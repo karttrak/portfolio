@@ -6,7 +6,7 @@ type Props = {
   title: string,
   description: string,
   imageUrl: string,
-  linkUrl: string,
+  linkUrl?: string,
   className?: string
 }
 
@@ -14,7 +14,7 @@ export default function Project(props: Props) {
   return (
     <div className={clsx(props.className, "flex flex-col gap-8 md:flex-row items-center")}>
       <div className="group relative w-full md:basis-1/2 xl:basis-2/5">
-        <a href={props.linkUrl} target="_blank">
+        <a href={props.linkUrl ? props.linkUrl : props.imageUrl} target="_blank">
           <Image src="/new-tab-icon.svg"
             alt="Open in new tab."
             className="absolute bottom-2 right-2 w-8 h-8 md:opacity-50 md:group-hover:opacity-100"

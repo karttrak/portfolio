@@ -100,21 +100,18 @@ export default function Home() {
             title="Salvatore Ferragamo location pages"
             description="Developed as part of Yext's [Pages](https://www.yext.com/platform/pages) product, this project is a fully responsive website that helps users locate their nearest Ferragamo store and view key store details. Built using Soy templates, SCSS, and CoffeeScript, the website is optimized for local SEO and adheres to WCAG 2.0 Level AA accessibility standards, ensuring a seamless and inclusive user experience."
             imageUrl="/projects/ferragamo-showcase.jpg"
-            linkUrl="/projects/ferragamo-showcase.jpg"
           />
           <Project
             className="mt-8 md:mt-0"
             title="Fundrise Transactions page"
             description="I implemented the redesign of the Transactions page for [Fundrise](https://fundrise.com/), enhancing usability and user experience on both mobile and desktop platforms. Transaction details are initially hidden for ease of navigation, with users able to expand them as needed, ensuring a seamless and intuitive experience for investors. The project utilized Java and MySQL for the backend, with AngularJS powering the frontend."
             imageUrl="/projects/fundrise-desktop.png"
-            linkUrl="/projects/fundrise-desktop.png"
           />
           <Project
             className="mt-8 md:mt-0"
             title="Freedom Analytics website"
             description="Designed and developed a website for Freedom Analytics to streamline hiring efforts. The landing page highlighted key facts about the company and showcased benefits, while the Careers page provided comprehensive details for the job and encouraged candidates apply. Built with SvelteKit and deployed on Netlify, the website offered a modern, responsive, and user-friendly experience to attract talent."
             imageUrl="/projects/freedom-showcase.png"
-            linkUrl="/projects/freedom-showcase.png"
           />
         </Section>
 
