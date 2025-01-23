@@ -16,7 +16,7 @@ export default function Project(props: Props) {
       <div className="group relative w-full md:basis-1/2 xl:basis-2/5">
         <a href={props.linkUrl} target="_blank">
           <Image src="/new-tab-icon.svg"
-            alt="Open in new tab"
+            alt="Open in new tab."
             className="absolute bottom-2 right-2 w-8 h-8 md:opacity-50 md:group-hover:opacity-100"
             width={32}
             height={32}

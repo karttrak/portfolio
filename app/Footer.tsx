@@ -18,7 +18,7 @@ export default function Footer() {
             aria-hidden
             className="w-5 dark:invert"
             src="/linkedin.svg"
-            alt="linkedIn Logo"
+            alt="linkedIn Logo."
             width={20}
             height={20}
           />
@@ -34,7 +34,7 @@ export default function Footer() {
             aria-hidden
             className="w-5 dark:invert"
             src="/email.svg"
-            alt="Email icon"
+            alt="Email icon."
             width={20}
             height={20}
           />

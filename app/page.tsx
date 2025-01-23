@@ -38,10 +38,9 @@ export default function Home() {
           <Image
             className="relative w-64 h-60 -z-1"
             src="/sloth.svg"
-            alt="Sloth logo"
+            alt="An illustration of a sloth floating in space."
             width={256}
             height={240}
-            aria-label="A sloth wearing an astronaut helmet and floating in space"
           />
         </div>
       </section >
@@ -67,9 +66,8 @@ export default function Home() {
 
         <TextSection {...sections.yext}>
           <Image
-            className=""
-            src="./rocket-ship.svg"
-            alt="Jupiter"
+            src="./ufo.svg"
+            alt="An illustration of a UFO."
             width={300}
             height={300}
           />
@@ -77,9 +75,8 @@ export default function Home() {
 
         <TextSection {...sections.fundrise} reverse={true}>
           <Image
-            className=""
             src="./jupiter.svg"
-            alt="Jupiter"
+            alt="An illustration of Jupiter."
             width={300}
             height={300}
           />
@@ -87,9 +84,8 @@ export default function Home() {
 
         <TextSection {...sections.entrepreneur}>
           <Image
-            className=""
-            src="./ufo.svg"
-            alt="Jupiter"
+            src="./rocket-ship.svg"
+            alt="An illustration of a rocket ship."
             width={300}
             height={300}
           />

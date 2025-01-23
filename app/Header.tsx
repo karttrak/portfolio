@@ -6,7 +6,7 @@ export default function Header() {
       <img
         className="relative r-0"
         src="/kt-logo.svg"
-        alt="Logo"
+        alt="KT logo."
       />
     </header>
   )
