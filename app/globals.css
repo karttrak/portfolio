@@ -6,7 +6,7 @@
   --background: #DAECF4;
   --foreground: #1F282D;
   --heading: #A87B21;
-  --starcolor: hsl(199, 20%, 60%);
+  --star-color: hsl(199, 20%, 60%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,7 +14,7 @@
     --background: #1F282D;
     --foreground: #CADCE4;
     --heading: #D8AB51;
-    --starcolor: hsl(199, 20%, 42%);
+    --star-color: hsl(199, 20%, 42%);
   }
 }
 

@@ -19,7 +19,7 @@ export default function StarSvg(props: StarSvgOverrides) {
     width: width,
     height: height,
     transform: `rotate(${Math.floor(Math.random() * 90)}deg)`,
-    fill: "var(--starcolor)",
+    fill: "var(--star-color)",
     ...props
   }
 
