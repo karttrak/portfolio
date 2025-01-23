@@ -21,7 +21,7 @@ export default function TextSection(props: Props) {
     "justify-center",
     "items-center",
     "gap-y-12",
-    "py-20",
+    "py-4",
     "w-full",
     "lg:gap-y-0",
     "lg:gap-x-20",
@@ -52,7 +52,7 @@ export default function TextSection(props: Props) {
       {paragraphElements ?
         <div className={contentContainerClasses}>
           {props.headingLevel === 3 ?
-            <h3 className="mb-8 w-full text-center lg:text-left text-5xl font-medium">{props.title}</h3>
+            <h3 className="mb-8 w-full text-center lg:text-left text-4xl sm:text-5xl font-medium">{props.title}</h3>
             : null}
           {paragraphElements}
         </div>

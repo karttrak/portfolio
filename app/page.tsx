@@ -21,15 +21,15 @@ export default function Home() {
       <Header />
 
       {/* HERO SECTION START */}
-      <section className="relative flex flex-col md:flex-row justify-center items-center gap-20 py-32 px-8 md:px-20 lg:px-32 w-full h-screen">
+      <section className="relative flex flex-col md:flex-row justify-center items-center gap-20 py-32 px-8 md:px-20 lg:px-32 w-full min-h-min h-svh">
         {starIcons}
-        <div className="relative m-auto md:m-0 md:w-2/3 max-w-[32rem] text-center text-4xl text-pretty font-genos font-medium z-2">
+        <div className="relative m-auto md:m-0 md:w-2/3 max-w-[32rem] text-center text-4xl font-genos font-medium z-2">
           <div className="absolute w-[110%] h-[110%] -left-[5%] -top-[5%] bg-[--background] blur-xl rounded-xl"></div>
           <h1 className="relative text-5xl text-[--heading]">
             Kyle Thornburgh
           </h1>
           <h2 className="relative text-4xl">Full-stack engineer</h2>
-          <p className="relative text-3xl">
+          <p className="relative text-3xl text-pretty">
             I love crafting clean code and intuitive designs for modern applications.
           </p>
         </div>
@@ -46,13 +46,13 @@ export default function Home() {
       </section >
       {/* HERO SECTION END */}
 
-      <main className="flex flex-col p-8 items-center md:items-start max-w-[75rem]">
+      <main className="flex flex-col gap-20 items-center md:items-start px-4 sm:px-8 w-full max-w-screen-xl">
 
         {/* ABOUT SECTION START */}
-        <section className="flex flex-col md:flex-wrap md:flex-row justify-center items-center gap-y-12 py-20 w-full md:gap-y-0 md:gap-x-12 lg:gap-x-20">
+        <section className="flex flex-col md:flex-wrap md:flex-row justify-center items-center gap-y-12 md:gap-y-0 md:gap-x-12 lg:gap-x-20 w-full py-8">
           <h2 className="lg:mb-12 w-full text-center text-5xl text-[--heading] font-medium">{sections.about.title}</h2>
 
-          <div className="space-y-8 max-w-[70ch] flex-1">
+          <div className="max-w-[70ch] flex-1">
             <p className="text-pretty">{sections.about.paragraphs}</p>
           </div>
 
@@ -92,23 +92,21 @@ export default function Home() {
         </TextSection>
 
         <Section
+          className="gap-y-16"
           title="Projects"
           headingLevel={2}
         >
           <Project
-            className="mt-8 md:mt-0"
             title="Salvatore Ferragamo location pages"
             description="Developed as part of Yext's [Pages](https://www.yext.com/platform/pages) product, this project is a fully responsive website that helps users locate their nearest Ferragamo store and view key store details. Built using Soy templates, SCSS, and CoffeeScript, the website is optimized for local SEO and adheres to WCAG 2.0 Level AA accessibility standards, ensuring a seamless and inclusive user experience."
             imageUrl="/projects/ferragamo-showcase.jpg"
           />
           <Project
-            className="mt-8 md:mt-0"
             title="Fundrise Transactions page"
             description="I implemented the redesign of the Transactions page for [Fundrise](https://fundrise.com/), enhancing usability and user experience on both mobile and desktop platforms. Transaction details are initially hidden for ease of navigation, with users able to expand them as needed, ensuring a seamless and intuitive experience for investors. The project utilized Java and MySQL for the backend, with AngularJS powering the frontend."
             imageUrl="/projects/fundrise-desktop.png"
           />
           <Project
-            className="mt-8 md:mt-0"
             title="Freedom Analytics website"
             description="Designed and developed a website for Freedom Analytics to streamline hiring efforts. The landing page highlighted key facts about the company and showcased benefits, while the Careers page provided comprehensive details for the job and encouraged candidates apply. Built with SvelteKit and deployed on Netlify, the website offered a modern, responsive, and user-friendly experience to attract talent."
             imageUrl="/projects/freedom-showcase.png"
