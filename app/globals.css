@@ -7,6 +7,7 @@
   --foreground: #1F282D;
   --heading: #A87B21;
   --star-color: hsl(199, 20%, 60%);
+  --headerHeight: 5rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,13 +27,18 @@ body {
   @apply sm:text-[1.2rem];
 }
 
+header {
+  height: var(--headerHeight);
+}
+
 h1,
 h2,
 h3 {
   font-family: var(--font-genos);
+  scroll-margin-top: var(--headerHeight);
 }
 
-a {
+a:not(nav a) {
   @apply text-sky-600;
   @apply dark:text-blue-400;
   @apply hover:underline;

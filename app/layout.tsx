@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <Analytics />
       <body className={`grid gap-8 place-items-center min-h-screen ${genosSans.variable} antialiased`}>
         {children}

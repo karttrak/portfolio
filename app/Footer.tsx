@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function Footer() {
   return (
     <footer className="flex flex-col items-center gap-y-8 w-full max-w-[80ch] py-12 px-4 sm:px-8 text-center text-pretty">
-      <h2 className="lg:mb-4 text-center text-5xl text-[--heading] font-medium">Contact</h2>
+      <h2 id="contact" className="lg:mb-4 text-center text-5xl text-[--heading] font-medium">Contact</h2>
       <p>
         Interested in collaborating or learning more about my work? Let&apos;s connect!
       </p>

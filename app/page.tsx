@@ -50,7 +50,7 @@ export default function Home() {
 
         {/* ABOUT SECTION START */}
         <section className="flex flex-col md:flex-wrap md:flex-row justify-center items-center gap-y-12 md:gap-y-0 md:gap-x-12 lg:gap-x-20 w-full py-8">
-          <h2 className="lg:mb-12 w-full text-center text-5xl text-[--heading] font-medium">{sections.about.title}</h2>
+          <h2 id="about" className="lg:mb-12 w-full text-center text-5xl text-[--heading] font-medium">{sections.about.title}</h2>
 
           <div className="max-w-[70ch] flex-1">
             <p className="text-pretty">{sections.about.paragraphs}</p>
@@ -62,7 +62,7 @@ export default function Home() {
         </section>
         {/* ABOUT SECTION END */}
 
-        <h2 className="mt-12 w-full text-center text-5xl text-[--heading] font-medium">Experience</h2>
+        <h2 id="experience" className="mt-12 w-full text-center text-5xl text-[--heading] font-medium">Experience</h2>
 
         <TextSection {...sections.yext}>
           <Image
