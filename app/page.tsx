@@ -46,7 +46,7 @@ export default function Home() {
       </section >
       {/* HERO SECTION END */}
 
-      <main className="flex flex-col gap-20 items-center md:items-start px-4 sm:px-8 w-full max-w-screen-xl">
+      <main id="main" className="flex flex-col gap-20 items-center md:items-start px-4 sm:px-8 w-full max-w-screen-xl">
 
         {/* ABOUT SECTION START */}
         <section className="flex flex-col md:flex-wrap md:flex-row justify-center items-center gap-y-12 md:gap-y-0 md:gap-x-12 lg:gap-x-20 w-full py-8">
