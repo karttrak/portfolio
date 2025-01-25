@@ -21,7 +21,7 @@ export default function Home() {
       <Header />
 
       {/* HERO SECTION START */}
-      <section className="relative flex flex-col md:flex-row justify-center items-center gap-20 py-32 px-8 md:px-20 lg:px-32 w-full min-h-min h-svh">
+      <section className="relative flex flex-wrap justify-center items-center gap-y-12 gap-x-20 py-24 sm:py-56 px-8 w-full min-h-min">
         {starIcons}
         <div className="relative m-auto md:m-0 md:w-2/3 max-w-[32rem] text-center text-4xl font-genos font-medium z-2">
           <div className="absolute w-[110%] h-[110%] -left-[5%] -top-[5%] bg-[--background] blur-xl rounded-xl"></div>
