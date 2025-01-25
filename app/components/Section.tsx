@@ -13,7 +13,7 @@ type Props = {
 export default function Section(props: Props) {
   function getSectionHeading(): React.ReactNode {
     if (props.headingLevel === 2) {
-      return <h2 id={kebabCase(props.title)} className="text-center text-5xl text-[--heading] font-medium">{props.title}</h2>
+      return <h2 id={kebabCase(props.title)} className="text-center text-5xl text-[--heading] font-medium slide-in-left">{props.title}</h2>
     } else if (props.headingLevel === 3) {
       return <h3 className="text-center lg:text-left text-5xl font-medium">{props.title}</h3>
     }

@@ -12,7 +12,7 @@ type Props = {
 
 export default function Project(props: Props) {
   return (
-    <div className={clsx(props.className, "flex flex-col gap-8 md:flex-row-reverse items-center")}>
+    <div className={clsx(props.className, "flex flex-col gap-8 md:flex-row-reverse items-center slide-in-left")}>
       <div className="flex flex-col gap-y-8 text-left md:basis-1/2 xl:basis-3/5">
         <span className="text-3xl font-medium font-genos">{props.title}</span>
         <ReactMarkdown linkTarget="_blank">

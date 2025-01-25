@@ -27,7 +27,9 @@ export default function TextSection(props: Props) {
     "w-full",
     "lg:gap-y-0",
     "lg:gap-x-20",
-    props.reverse && "flex-row-reverse",
+    !props.children && "slide-in-up",
+    props.children && !props.reverse && "slide-in-left",
+    props.children && props.reverse && "flex-row-reverse slide-in-right",
     props.className,
   )
 

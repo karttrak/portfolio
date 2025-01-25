@@ -63,7 +63,7 @@ export default function Skills() {
     }
 
     return (
-      <li key={i} style={styles} className="relative row-span-2 flex flex-col justify-center items-center text-sm sm:text-base size-24 sm:size-32">
+      <li key={i} style={styles} className="relative row-span-2 flex flex-col justify-center items-center text-sm sm:text-base size-24 sm:size-32 bg-[--background] rounded-full slide-in-left">
         <CircleSvg className="absolute w-full" />
         <Image
           className={skillClasses}
