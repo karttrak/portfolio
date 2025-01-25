@@ -4,7 +4,7 @@
 
 :root {
   --background: #DAECF4;
-  --foreground: #1F282D;
+  --foreground: #0F172A;
   --heading: #A87B21;
   --star-color: hsl(199, 20%, 60%);
   --headerHeight: 5rem;
@@ -12,7 +12,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1F282D;
+    --background: #0F172A;
     --foreground: #CADCE4;
     --heading: #D8AB51;
     --star-color: hsl(199, 20%, 42%);
