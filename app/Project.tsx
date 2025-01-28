@@ -1,11 +1,10 @@
 import Image from "next/image"
 import clsx from "clsx"
-import ReactMarkdown from "react-markdown"
 
 type Props = {
   title: string,
-  description: string,
   imageUrl: string,
+  children: React.ReactNode,
   linkUrl?: string,
   className?: string
 }
@@ -15,9 +14,7 @@ export default function Project(props: Props) {
     <div className={clsx(props.className, "flex flex-col gap-8 md:flex-row-reverse items-center slide-in-left")}>
       <div className="flex flex-col gap-y-8 text-left md:basis-1/2 xl:basis-3/5">
         <span className="text-3xl font-medium font-genos">{props.title}</span>
-        <ReactMarkdown linkTarget="_blank">
-          {props.description}
-        </ReactMarkdown>
+        {props.children}
       </div>
       <div className="group relative w-full md:basis-1/2 xl:basis-2/5">
         <a href={props.linkUrl ? props.linkUrl : props.imageUrl} target="_blank">
