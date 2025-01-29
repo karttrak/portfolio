@@ -29,7 +29,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 py-4 z-10">
-      <nav className="w-full p-2 bg-sky-100/70 dark:bg-slate-800/80 rounded-full backdrop-blur-sm shadow-md">
+      <nav className="w-full p-2 bg-[--header-background] rounded-full backdrop-blur-sm shadow-md">
         <ul className="flex justify-around gap-x-2 sm:gap-x-4 w-full max-w-screen-md">
           {listItemElements}
         </ul>

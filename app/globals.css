@@ -5,6 +5,7 @@
 :root {
   --background: #DAECF4;
   --foreground: #0F172A;
+  --header-background: rgb(224 242 254 / 0.7);
   --heading: #A87B21;
   --star-color: hsl(199, 20%, 60%);
   --headerHeight: 5rem;
@@ -14,6 +15,7 @@
   :root {
     --background: #0F172A;
     --foreground: #CADCE4;
+    --header-background: rgb(30 41 59 / 0.8);
     --heading: #D8AB51;
     --star-color: hsl(199, 20%, 42%);
   }
