@@ -3,14 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #DAECF4;
+  --foreground: #0F172A;
+  --header-background: rgb(224 242 254 / 0.7);
+  --heading: #A87B21;
+  --star-color: hsl(199, 20%, 60%);
+  --headerHeight: 5rem;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0F172A;
+    --foreground: #CADCE4;
+    --header-background: rgb(30 41 59 / 0.8);
+    --heading: #D8AB51;
+    --star-color: hsl(199, 20%, 42%);
   }
 }
 
@@ -18,4 +25,75 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+  @apply sm:text-[1.2rem];
+}
+
+header {
+  height: var(--headerHeight);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-genos);
+  scroll-margin-top: var(--headerHeight);
+}
+
+a:not(nav a) {
+  @apply text-sky-600;
+  @apply dark:text-blue-400;
+  @apply hover:underline;
+  @apply hover:underline-offset-4;
+}
+
+.font-genos {
+  font-family: var(--font-genos);
+}
+
+.slide-in-up {
+  --transform-start: translateY(100vw);
+}
+
+.slide-in-left {
+  --transform-start: translateX(50vw);
+}
+
+.slide-in-right {
+  --transform-start: translateX(-50vw);
+}
+
+.slide-in-up,
+.slide-in-left,
+.slide-in-right {
+  animation: slide-in cubic-bezier(0.1, 1, 0.1, 1);
+  animation-timeline: view();
+}
+
+@media (prefers-reduced-motion) {
+
+  .slide-in-up,
+  .slide-in-left,
+  .slide-in-right {
+    animation: none;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: var(--transform-start);
+  }
+
+  12% {
+    opacity: 0;
+  }
+
+  60% {
+    transform: translate(0);
+  }
+
+  70% {
+    opacity: 1;
+  }
 }

@@ -1,0 +1,37 @@
+{
+  "about": {
+    "title": "About me",
+    "headingLevel": 2,
+    "paragraphs": [
+      "I'm a versatile software engineer with a passion for creating quality products. Over the years, I've honed my skills in web development, team management, and process automation. Whether I'm streamlining operations or developing modern applications, I bring creativity, precision, and dedication to every project. Outside of coding, I'm a proud chicken dad, a PC builder, and a beginner gardener."
+    ]
+  },
+  "yext": {
+    "title": "Yext",
+    "headingLevel": 3,
+    "paragraphs": [
+      "I specialized in delivering custom store locator websites for major brands, such as Saks Fifth Avenue, Macy's, and Sleep Number, optimizing them for local SEO to enhance visibility and user engagement. Working on tight deadlines, I consistently completed high-quality, multi-page websites in just 2-3 weeks. To improve internal workflow, I developed a CLI tool using Go and Bash that automated syncing localization files by interfacing with the Smartling API. Additionally, I collaborated with Android and iOS developers around the world to integrate Yext's advertising SDK into apps with a combined 5 million monthly active users."
+    ]
+  },
+  "fundrise": {
+    "title": "Fundrise",
+    "headingLevel": 3,
+    "paragraphs": [
+      "I co-designed and implemented the User Account Levels feature from the ground up, tailoring offerings to customers based on their portfolio holdings to drive increased investment activity. This long-term initiative involved developing multiple suites of automated onboarding emails to engage users and encourage them to explore newly available features. Additionally, I overhauled the Transactions page to enhance clarity and usability. Collaborating with the Accounting and Real Estate departments, I created internal reporting tools that empowered data-driven decision-making and significantly boosted company efficiency."
+    ]
+  },
+  "entrepreneur": {
+    "title": "Entrepreneurship",
+    "headingLevel": 3,
+    "paragraphs": [
+      "As a co-owner of Pheasant Field Bed and Breakfast and the COO of Freedom Analytics, I honed my leadership and problem-solving skills in dynamic and fast-paced environments. At Freedom Analytics, I managed a team of up to 100 employees and developed automated processes that reduced task times by 50-90%, showcasing my ability to streamline operations and drive efficiency. At Pheasant Field Bed and Breakfast, I oversee day-to-day operations and guest services, ensuring exceptional experiences for both customers and staff. These ventures have strengthened my strategic thinking, team leadership, and adaptability—skills that complement my technical expertise and prepare me for success in software engineering roles."
+    ]
+  },
+  "next": {
+    "title": "What's next",
+    "headingLevel": 2,
+    "paragraphs": [
+      "I'm excited to return to the tech industry and continue my journey as a software engineer. Although I spent the past several years focused on entrepreneurship, I never stepped away from my passion for programming. Throughout this time, I actively worked on projects to stay up to date with industry trends and explore new technologies like Svelte, Firebase, and React 19. My entrepreneurial experience has taught me how to be both a more effective leader and team-player to adapt and deliver impactful solutions. I'm eager to combine these skills with my technical expertise to tackle challenging problems, collaborate with forward-thinking teams, and create technology that drives meaningful change."
+    ]
+  }
+}
