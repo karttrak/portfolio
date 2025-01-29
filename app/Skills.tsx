@@ -35,7 +35,7 @@ export default function Skills() {
     },
     {
       label: "Java",
-      imageUrl: "skills/Java-logo.svg"
+      imageUrl: "skills/java-logo.svg"
     },
     {
       label: "Firebase",
@@ -47,7 +47,7 @@ export default function Skills() {
     },
     {
       label: "Svelte",
-      imageUrl: "skills/Svelte-logo.svg"
+      imageUrl: "skills/svelte-logo.svg"
     },
     {
       label: "A11y",
