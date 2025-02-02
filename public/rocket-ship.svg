@@ -22,7 +22,14 @@
         opacity: .1;
       }
     </style>
+    <g id="star" fill="hsl(199, 20%, 60%)">
+      <polygon points="78.13 70.19 137.32 67.98 78.16 65.02 88.1 55.98 74.96 62.46 79.74 47.69 71.69 59.59 69.47 0 66.48 59.59 57.78 47.83 62.97 61.66 50.34 55.91 59.68 64.56 0 67.55 60.76 69.83 49.77 78.79 62.85 73.29 56.57 87.23 65.99 76.13 69.35 142.85 71.86 75.83 81.3 87.58 75.2 73.08 88.67 79.01 78.13 70.19" />
+    </g>
   </defs>
+  <use href="#star" transform="translate(0, -5) rotate(10) scale (0.7)" />
+  <use href="#star" transform="translate(39, 140) rotate(63) scale (0.3)" />
+  <use href="#star" transform="translate(100, -5) rotate(1) scale (0.35)" />
+  <use href="#star" transform="translate(170, 230) rotate(-5) scale (0.55)" />
   <g id="Rocket">
     <g id="Rocket-2" data-name="Rocket">
       <path class="cls-4" d="M204.51,168.62c-51.91,76.39-112.71,125.6-135.8,109.91-23.1-15.69.26-90.34,52.17-166.73C172.79,35.4,243.61-6.99,256.68,1.89c12.06,8.2-.26,90.34-52.17,166.73Z"/>
