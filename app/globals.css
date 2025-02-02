@@ -11,14 +11,12 @@
   --headerHeight: 5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0F172A;
-    --foreground: #CADCE4;
-    --header-background: rgb(30 41 59 / 0.8);
-    --heading: #D8AB51;
-    --star-color: hsl(199, 20%, 42%);
-  }
+:root.dark {
+  --background: #0F172A;
+  --foreground: #CADCE4;
+  --header-background: rgb(30 41 59 / 0.8);
+  --heading: #D8AB51;
+  --star-color: hsl(199, 20%, 42%);
 }
 
 body {
