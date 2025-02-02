@@ -11,14 +11,12 @@
   --headerHeight: 5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0F172A;
-    --foreground: #CADCE4;
-    --header-background: rgb(30 41 59 / 0.8);
-    --heading: #D8AB51;
-    --star-color: hsl(199, 20%, 42%);
-  }
+:root.dark {
+  --background: #0F172A;
+  --foreground: #CADCE4;
+  --header-background: rgb(30 41 59 / 0.8);
+  --heading: #D8AB51;
+  --star-color: hsl(199, 20%, 42%);
 }
 
 body {
@@ -51,23 +49,25 @@ a:not(nav a) {
   font-family: var(--font-genos);
 }
 
-.slide-in-up {
-  --transform-start: translateY(100vw);
-}
+@media screen and (min-width: 48rem) {
+  .slide-in-up {
+    --transform-start: translateY(100vw);
+  }
 
-.slide-in-left {
-  --transform-start: translateX(50vw);
-}
+  .slide-in-left {
+    --transform-start: translateX(50vw);
+  }
 
-.slide-in-right {
-  --transform-start: translateX(-50vw);
-}
+  .slide-in-right {
+    --transform-start: translateX(-50vw);
+  }
 
-.slide-in-up,
-.slide-in-left,
-.slide-in-right {
-  animation: slide-in cubic-bezier(0.1, 1, 0.1, 1);
-  animation-timeline: view();
+  .slide-in-up,
+  .slide-in-left,
+  .slide-in-right {
+    animation: slide-in cubic-bezier(0.1, 1, 0.1, 1);
+    animation-timeline: view();
+  }
 }
 
 @media (prefers-reduced-motion) {

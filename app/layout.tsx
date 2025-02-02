@@ -19,10 +19,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="dark scroll-smooth">
       <Analytics />
       <body className={`relative grid gap-8 place-items-center min-h-screen overflow-x-hidden ${genosSans.variable} antialiased`}>
+
         <a href="#main" className="absolute left-0 top-0 py-2 px-4 z-50 -translate-y-full focus:translate-y-0 transition" tabIndex={0}>Skip to main content</a>
+
         {children}
       </body>
     </html>
