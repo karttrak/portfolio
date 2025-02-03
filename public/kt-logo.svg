@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 14.5 88 53">
-  <rect fill="#55727f" x="20" y="14.5" width="6.5" height="52.5" />
-  <rect fill="#55727f" x="88" y="14.5" width="20" height="6" />
-  <polygon fill="#d8ab4f" points="50.75,14.5 26.75,39 26.75,41.5 53,67 62.25,67 33.75,39.75 53,20.25 83.75,20.25 83.75,67 89.25,67 89.25,14.5 50.75,14.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -30 100 60">
+  <path stroke="#D8AB4F" fill="transparent" stroke-width="8" stroke-linejoin="miter" stroke-linecap="square"
+    d="
+      M -8, 30
+      L -33, -3
+      M -45, 0
+      L -10, -26
+      L 25, -26
+      L 25, 26
+    "
+  />
+  <path stroke="#55727F" fill="transparent" stroke-width="8" stroke-linecap="square"
+    d="
+      M -46, -26
+      L -46, 26
+      M 32.99, -26
+      L 46, -26
+    "
+  />
 </svg>
