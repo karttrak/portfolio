@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100">
+  <path id="K-blue" stroke="#55727F" fill="transparent" stroke-width="20" stroke-linecap="round"
+    d="M -40, -35 L -40, 35"
+  />
+  <path id="K-yellow" stroke="#D8AB4F" fill="transparent" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"
+    d="M -0, 35 L -35, 0 L -0, -35"
+  />
+  <path id="T-blue" stroke="#55727F" fill="transparent" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"
+    d="M -10, -35 L 15, -35 L 15, 35"
+  />
+  <path id="T-yellow" stroke="#D8AB4F" fill="transparent" stroke-width="20" stroke-linecap="round"
+    d="M 25, -35 L 40, -35"
+  />
+</svg>
