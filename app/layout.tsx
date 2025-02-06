@@ -21,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
+        <Analytics />
         <script
           id="theme-script"
           dangerouslySetInnerHTML={{
@@ -39,7 +40,6 @@ export default function RootLayout({
             `
           }}
         />
-        <Analytics />
       </head>
       <body className={`relative grid gap-8 place-items-center min-h-screen overflow-x-hidden ${genosSans.variable} antialiased transition-colors`}>
 
