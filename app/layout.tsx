@@ -19,9 +19,29 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark scroll-smooth">
-      <Analytics />
-      <body className={`relative grid gap-8 place-items-center min-h-screen overflow-x-hidden ${genosSans.variable} antialiased`}>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <head>
+        <Analytics />
+        <script
+          id="theme-script"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const savedTheme = localStorage.getItem('theme');
+                const systemPreference = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                const initialTheme = savedTheme || systemPreference;
+                
+                if (initialTheme === 'dark') {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                }
+              })()
+            `
+          }}
+        />
+      </head>
+      <body className={`relative grid gap-8 place-items-center min-h-screen overflow-x-hidden ${genosSans.variable} antialiased transition-colors`}>
 
         <a href="#main" className="absolute left-0 top-0 py-2 px-4 z-50 -translate-y-full focus:translate-y-0 transition" tabIndex={0}>Skip to main content</a>
 

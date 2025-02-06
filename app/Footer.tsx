@@ -1,5 +1,7 @@
 import Image from "next/image"
 
+import ThemeSelector from "./components/ThemeSelector"
+
 export default function Footer() {
   return (
     <footer className="flex flex-col items-center gap-y-8 w-full max-w-[80ch] py-12 px-4 sm:px-8 text-center text-pretty">
@@ -41,9 +43,13 @@ export default function Footer() {
           Send&nbsp;an&nbsp;email
         </a>
       </div>
+
       <p className="text-base">
         © 2025 Kyle Thornburgh
       </p>
+
+      <ThemeSelector />
+
     </footer>
   )
 }
