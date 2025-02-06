@@ -27,8 +27,6 @@ export default function ThemeSelector() {
     if (theme !== undefined) localStorage.setItem("theme", theme);
   }, [theme]);
 
-  console.log(theme);
-
   if (typeof document !== "undefined") {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
@@ -38,12 +36,10 @@ export default function ThemeSelector() {
   }
 
   function setDarkTheme() {
-    console.log("Switching to dark mode");
     setTheme("dark");
   }
 
   function setLightTheme() {
-    console.log("Switching to light mode");
     setTheme("light");
   }
 
