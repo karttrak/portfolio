@@ -4,6 +4,29 @@ import { useEffect, useState } from 'react'
 import SunSvg from './SunSvg'
 import MoonSvg from './MoonSvg'
 
+export function ThemeScript() {
+  return (
+    <script
+      id="theme-script"
+      dangerouslySetInnerHTML={{
+        __html: `
+          (function() {
+            const savedTheme = localStorage.getItem('theme');
+            const systemPreference = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            const initialTheme = savedTheme || systemPreference;
+            
+            if (initialTheme === 'dark') {
+              document.documentElement.classList.add('dark');
+            } else {
+              document.documentElement.classList.remove('dark');
+            }
+          })()
+        `
+      }}
+    />
+  )
+}
+
 export default function ThemeToggle() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light')
 
