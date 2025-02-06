@@ -10,14 +10,10 @@ type Theme = "dark" | "light";
 export default function ThemeSelector() {
   const [theme, setTheme] = useState<Theme>("dark");
 
-  // Check for saved theme preference or system preference
+  // Check for saved theme preference
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") as Theme;
-    const systemPreference = window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .matches ? "dark" : "light";
-
-    const initialTheme = savedTheme || systemPreference;
+    const initialTheme = savedTheme || "dark";
 
     setTheme(initialTheme);
     document.documentElement.classList.toggle("dark", initialTheme === "dark");
