@@ -3,8 +3,6 @@ import { Analytics } from "@vercel/analytics/react"
 import { Genos } from "next/font/google";
 import "./globals.css";
 
-import { ThemeScript } from "./components/ThemeToggle";
-
 const genosSans = Genos({
   variable: "--font-genos",
   subsets: ["latin"],
@@ -23,7 +21,24 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
-        <ThemeScript />
+        <script
+          id="theme-script"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const savedTheme = localStorage.getItem('theme');
+                const systemPreference = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                const initialTheme = savedTheme || systemPreference;
+                
+                if (initialTheme === 'dark') {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                }
+              })()
+            `
+          }}
+        />
         <Analytics />
       </head>
       <body className={`relative grid gap-8 place-items-center min-h-screen overflow-x-hidden ${genosSans.variable} antialiased transition-colors`}>

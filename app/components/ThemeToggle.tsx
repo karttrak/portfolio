@@ -1,66 +1,43 @@
-'use client'
+"use client"
 
-import { useEffect, useState } from 'react'
-import SunSvg from './SunSvg'
-import MoonSvg from './MoonSvg'
-
-export function ThemeScript() {
-  return (
-    <script
-      id="theme-script"
-      dangerouslySetInnerHTML={{
-        __html: `
-          (function() {
-            const savedTheme = localStorage.getItem('theme');
-            const systemPreference = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-            const initialTheme = savedTheme || systemPreference;
-            
-            if (initialTheme === 'dark') {
-              document.documentElement.classList.add('dark');
-            } else {
-              document.documentElement.classList.remove('dark');
-            }
-          })()
-        `
-      }}
-    />
-  )
-}
+import { useEffect, useState } from "react"
+import SunSvg from "./SunSvg"
+import MoonSvg from "./MoonSvg"
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light')
+  const [theme, setTheme] = useState<"light" | "dark">("light")
 
   useEffect(() => {
     // Check for saved theme preference or system preference
-    const savedTheme = localStorage.getItem('theme') as 'light' | 'dark'
-    const systemPreference = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    const savedTheme = localStorage.getItem("theme") as "light" | "dark"
+    const systemPreference = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
 
     const initialTheme = savedTheme || systemPreference
 
     setTheme(initialTheme)
-    document.documentElement.classList.toggle('dark', initialTheme === 'dark')
+    document.documentElement.classList.toggle("dark", initialTheme === "dark")
   }, [])
 
   const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light'
+    const newTheme = theme === "light" ? "dark" : "light"
 
     // Update state
     setTheme(newTheme)
 
     // Toggle dark class on html element
-    document.documentElement.classList.toggle('dark')
+    document.documentElement.classList.toggle("dark")
 
     // Save preference
-    localStorage.setItem('theme', newTheme)
+    localStorage.setItem("theme", newTheme)
   }
 
   return (
     <button
       className="relative w-6 h-6"
       onClick={toggleTheme}
-      aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+      aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
     >
-      {theme === 'light' ? (
+      {theme === "light" ? (
         <MoonSvg className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
       ) : (
         <SunSvg className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />

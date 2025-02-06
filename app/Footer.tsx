@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import ThemeToggle from "./components/ThemeToggle"
+import ThemeSelector from "./components/ThemeSelector"
 
 export default function Footer() {
   return (
@@ -48,7 +48,7 @@ export default function Footer() {
         © 2025 Kyle Thornburgh
       </p>
 
-      <ThemeToggle />
+      <ThemeSelector />
 
     </footer>
   )
