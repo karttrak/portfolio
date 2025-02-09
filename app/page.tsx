@@ -1,14 +1,13 @@
-// Layout / Sections
-import Header from "./Header";
+import Image from "next/image";
+
+// Page sections
 import Skills from "./Skills";
 import Project from "./Project";
-import Footer from "./Footer";
 
 // Reusable components
 import Section from "./components/Section";
 import TextSection from "./components/TextSection";
 import StarSvg from "./components/StarSvg";
-import Image from "next/image";
 
 // Data
 import sections from "./homepage.json"
@@ -18,8 +17,6 @@ export default function Home() {
 
   return (
     <>
-      <Header />
-
       {/* HERO SECTION START */}
       <section className="relative flex flex-wrap justify-center items-center gap-y-12 gap-x-20 py-24 sm:py-56 px-8 w-full min-h-min">
         {starIcons}
@@ -125,7 +122,6 @@ export default function Home() {
 
         <TextSection className="text-center" {...sections.next} />
       </main>
-      <Footer />
     </>
   );
 }
