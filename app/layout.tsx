@@ -3,6 +3,9 @@ import { Analytics } from "@vercel/analytics/react"
 import { Genos } from "next/font/google";
 import "./globals.css";
 
+import Header from "./Header";
+import Footer from "./Footer";
+
 const genosSans = Genos({
   variable: "--font-genos",
   subsets: ["latin"],
@@ -40,11 +43,14 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`relative grid gap-8 place-items-center min-h-screen overflow-x-hidden ${genosSans.variable} antialiased transition-colors`}>
+      <body className={`relative grid gap-8 place-items-center min-h-screen pt-20 overflow-x-hidden ${genosSans.variable} antialiased transition-colors`}>
 
         <a href="#main" className="absolute left-0 top-0 py-2 px-4 z-50 -translate-y-full focus:translate-y-0 transition" tabIndex={0}>Skip to main content</a>
 
+        <Header />
         {children}
+        <Footer />
+
       </body>
     </html>
   );

@@ -1,25 +1,34 @@
-// Layout / Sections
-import Header from "./Header";
+import Image from "next/image";
+
+// Page sections
 import Skills from "./Skills";
 import Project from "./Project";
-import Footer from "./Footer";
 
 // Reusable components
 import Section from "./components/Section";
 import TextSection from "./components/TextSection";
 import StarSvg from "./components/StarSvg";
-import Image from "next/image";
 
 // Data
 import sections from "./homepage.json"
 
 export default function Home() {
   const starIcons = new Array(20).fill(0).map((_, i) => <StarSvg key={i} />)
+  const starIconsLeftMargin = new Array(20).fill(0).map((_, i) => {
+    return <StarSvg key={i}
+      top={`calc(${Math.floor(Math.random() * 100)}% - 20px)`}
+      left={`calc(${Math.floor(Math.random() * 20)}% - 20px)`}
+    />
+  })
+  const starIconsRightMargin = new Array(20).fill(0).map((_, i) => {
+    return <StarSvg key={i}
+      top={`calc(${Math.floor(Math.random() * 100)}% - 20px)`}
+      left={`calc(${Math.floor(Math.random() * 20) + 80}% - 20px)`}
+    />
+  })
 
   return (
     <>
-      <Header />
-
       {/* HERO SECTION START */}
       <section className="relative flex flex-wrap justify-center items-center gap-y-12 gap-x-20 py-24 sm:py-56 px-8 w-full min-h-min">
         {starIcons}
@@ -46,7 +55,12 @@ export default function Home() {
       </section >
       {/* HERO SECTION END */}
 
-      <main id="main" className="flex flex-col gap-20 items-center md:items-start px-4 sm:px-8 w-full max-w-screen-xl">
+      <div id="stars" className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden pointer-events-none -z-20">
+        {starIconsLeftMargin}
+        {starIconsRightMargin}
+      </div>
+      <main id="main" className="relative flex flex-col gap-20 items-center md:items-start px-4 sm:px-8 w-full max-w-screen-xl">
+        <div className="absolute top-0 left-0 right-0 bottom-0 bg-[--background] blur-xl rounded-xl -z-10"></div>
 
         {/* ABOUT SECTION START */}
         <section className="flex flex-col md:flex-wrap md:flex-row justify-center items-center gap-y-12 md:gap-y-0 md:gap-x-12 lg:gap-x-20 w-full py-8">
@@ -125,7 +139,6 @@ export default function Home() {
 
         <TextSection className="text-center" {...sections.next} />
       </main>
-      <Footer />
     </>
   );
 }

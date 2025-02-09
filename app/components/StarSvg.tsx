@@ -14,8 +14,8 @@ export default function StarSvg(props: StarSvgOverrides) {
   const height = props.height || width;
 
   const defaults: StarSvg = {
-    top: `calc(${Math.floor(Math.random() * 90) + 10}% - ${width ^ 2 / 2}px)`,
-    left: `calc(${Math.floor(Math.random() * 90) + 10}% - ${height ^ 2 / 2}px)`,
+    top: `calc(${Math.floor(Math.random() * 90) + 10}% - ${width / 2}px)`,
+    left: `calc(${Math.floor(Math.random() * 90) + 10}% - ${height / 2}px)`,
     width: width,
     height: height,
     transform: `rotate(${Math.floor(Math.random() * 90)}deg)`,
