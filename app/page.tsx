@@ -50,6 +50,7 @@ export default function Home() {
             alt="An illustration of a sloth floating in space."
             width={256}
             height={240}
+            priority
           />
         </div>
       </section >
