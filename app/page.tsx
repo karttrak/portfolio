@@ -112,11 +112,12 @@ export default function Home() {
           headingLevel={2}
         >
           <Project
-            title="Salvatore Ferragamo location pages"
-            imageUrl="/projects/ferragamo-showcase.jpg"
+            title="Pheasant Field B&B Website"
+            imageUrl="/projects/pheasant-field-thumbnail.png"
+            linkUrl="https://pheasantfield.com/?utm_source=kyle&utm_medium=portfolio"
           >
             <p>
-              Developed as part of Yext&apos;s <a href="https://www.yext.com/platform/pages" target="_blank" rel="noopener noreferrer">Pages</a> product, this project is a fully responsive website that helps users locate their nearest Ferragamo store and view key store details. Built using Soy templates, SCSS, and CoffeeScript, the website is optimized for local SEO and adheres to WCAG 2.0 Level AA accessibility standards, ensuring a seamless and inclusive user experience.
+              Designed and developed the website for <a href="https://pheasantfield.com/?utm_source=kyle&utm_medium=portfolio" target="_blank" rel="noopener noreferrer">Pheasant Field Bed and Breakfast</a> using WordPress with custom CSS for a clean, responsive, and accessible user experience. Optimized for mobile and ADA compliance, the site integrates booking tools and SEO best practices to boost online visibility. This project showcases my ability to combine technical skills and business insight to create effective, user-friendly web solutions.
             </p>
           </Project>
           <Project
@@ -128,13 +129,12 @@ export default function Home() {
             </p>
           </Project>
           <Project
-            title="Freedom Analytics website"
-            imageUrl="/projects/freedom-showcase.png"
+            title="Salvatore Ferragamo location pages"
+            imageUrl="/projects/ferragamo-showcase.jpg"
           >
             <p>
-              Designed and developed a website for Freedom Analytics to streamline hiring efforts. The landing page highlighted key facts about the company and showcased benefits, while the Careers page provided comprehensive details for the job and encouraged candidates apply. Built with SvelteKit and deployed on Netlify, the website offered a modern, responsive, and user-friendly experience to attract talent.
+              Developed as part of Yext&apos;s <a href="https://www.yext.com/platform/pages" target="_blank" rel="noopener noreferrer">Pages</a> product, this project is a fully responsive website that helps users locate their nearest Ferragamo store and view key store details. Built using Soy templates, SCSS, and CoffeeScript, the website is optimized for local SEO and adheres to WCAG 2.0 Level AA accessibility standards, ensuring a seamless and inclusive user experience.
             </p>
-
           </Project>
         </Section>
 
