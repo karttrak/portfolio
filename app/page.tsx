@@ -114,10 +114,10 @@ export default function Home() {
           <Project
             title="Pheasant Field B&B Website"
             imageUrl="/projects/pheasant-field-thumbnail.png"
-            linkUrl="https://pheasantfield.com/?utm_source=kyle&utm_medium=portfolio"
+            linkUrl="https://pheasantfield.com/"
           >
             <p>
-              Designed and developed the website for <a href="https://pheasantfield.com/?utm_source=kyle&utm_medium=portfolio" target="_blank" rel="noopener noreferrer">Pheasant Field Bed and Breakfast</a> using WordPress with custom CSS for a clean, responsive, and accessible user experience. Optimized for mobile and ADA compliance, the site integrates booking tools and SEO best practices to boost online visibility. This project showcases my ability to combine technical skills and business insight to create effective, user-friendly web solutions.
+              Designed and developed the website for <a href="https://pheasantfield.com/" target="_blank" rel="noopener">Pheasant Field Bed and Breakfast</a> using WordPress with custom CSS for a clean, responsive, and accessible user experience. Optimized for mobile and ADA compliance, the site integrates booking tools and SEO best practices to boost online visibility. This project showcases my ability to combine technical skills and business insight to create effective, user-friendly web solutions.
             </p>
           </Project>
           <Project
