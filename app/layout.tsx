@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+    <html lang="en" className="scroll-smooth dark" suppressHydrationWarning>
       <head>
         <Analytics />
         <script
@@ -34,9 +34,7 @@ export default function RootLayout({
                 const savedTheme = localStorage.getItem('theme');
                 const initialTheme = savedTheme || 'dark';
                 
-                if (initialTheme === 'dark') {
-                  document.documentElement.classList.add('dark');
-                } else {
+                if (initialTheme === 'light') {
                   document.documentElement.classList.remove('dark');
                 }
               })()
