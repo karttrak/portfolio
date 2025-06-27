@@ -48,6 +48,10 @@ export default function Footer() {
         © 2025 Kyle Thornburgh
       </p>
 
+      <p className="text-base">
+        Made with Next.js, React, and Tailwind CSS.
+      </p>
+
       <ThemeSelector />
 
     </footer>
