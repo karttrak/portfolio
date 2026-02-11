@@ -29,38 +29,39 @@ export default function Home() {
 
   return (
     <>
-      {/* HERO SECTION START */}
-      <section className="relative flex flex-wrap justify-center items-center gap-y-12 gap-x-20 py-24 sm:py-56 px-8 w-full min-h-min">
-        {starIcons}
-        <div className="relative m-auto md:m-0 md:w-2/3 max-w-[32rem] text-center text-4xl font-genos font-medium z-2">
-          <div className="absolute w-[110%] h-[110%] -left-[5%] -top-[5%] bg-[--background] blur-xl rounded-xl"></div>
-          <h1 className="relative text-5xl text-[--heading]">
-            Kyle Thornburgh
-          </h1>
-          <h2 className="relative text-4xl">Full-stack engineer</h2>
-          <p className="relative text-3xl text-pretty">
-            I love crafting clean code and intuitive designs for modern applications.
-          </p>
-        </div>
-        <div className="relative m-auto md:m-0 w-64 h-60 -z-1">
-          <div className="absolute w-[110%] h-[110%] -left-[5%] -top-[5%] bg-[--background] blur-xl rounded-full"></div>
-          <Image
-            className="relative w-64 h-60 -z-1"
-            src="/sloth.svg"
-            alt="An illustration of a sloth floating in space."
-            width={256}
-            height={240}
-            priority
-          />
-        </div>
-      </section >
-      {/* HERO SECTION END */}
-
       <div id="stars" className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden pointer-events-none -z-20">
         {starIconsLeftMargin}
         {starIconsRightMargin}
       </div>
+
       <main id="main" className="relative flex flex-col gap-20 items-center md:items-start px-4 sm:px-8 w-full max-w-screen-xl">
+        {/* HERO SECTION START */}
+        <section className="relative flex flex-wrap justify-center items-center gap-y-12 gap-x-20 py-24 sm:py-56 px-8 w-full min-h-min">
+          {starIcons}
+          <div className="relative m-auto md:m-0 md:w-2/3 max-w-[32rem] text-center text-4xl font-genos font-medium z-2">
+            <div className="absolute w-[110%] h-[110%] -left-[5%] -top-[5%] bg-[--background] blur-xl rounded-xl"></div>
+            <h1 className="relative text-5xl text-[--heading]">
+              Kyle Thornburgh
+            </h1>
+            <h2 className="relative text-4xl">Full-stack engineer</h2>
+            <p className="relative text-3xl text-pretty">
+              I love crafting clean code and intuitive designs for modern applications.
+            </p>
+          </div>
+          <div className="relative m-auto md:m-0 w-64 h-60 -z-1">
+            <div className="absolute w-[110%] h-[110%] -left-[5%] -top-[5%] bg-[--background] blur-xl rounded-full"></div>
+            <Image
+              className="relative w-64 h-60 -z-1"
+              src="/sloth.svg"
+              alt="An illustration of a sloth floating in space."
+              width={256}
+              height={240}
+              priority
+            />
+          </div>
+        </section >
+        {/* HERO SECTION END */}
+
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-[--background] blur-xl rounded-xl -z-10"></div>
 
         {/* ABOUT SECTION START */}
