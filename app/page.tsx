@@ -42,8 +42,8 @@ export default function Home() {
             <div className="absolute w-[110%] h-[110%] -left-[5%] -top-[5%] bg-[--background] blur-xl rounded-xl"></div>
             <h1 className="relative text-5xl text-[--heading]">
               Kyle Thornburgh
+              <span className="block text-4xl text-foreground">Full-stack engineer</span>
             </h1>
-            <h2 className="relative text-4xl">Full-stack engineer</h2>
             <p className="relative text-3xl text-pretty">
               I love crafting clean code and intuitive designs for modern applications.
             </p>
