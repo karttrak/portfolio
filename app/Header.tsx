@@ -28,9 +28,11 @@ export default function Header() {
   })
 
   return (
-    <header className="fixed top-0 py-4 z-10">
-      <nav className="w-full p-2 bg-[--header-background] rounded-full backdrop-blur-sm shadow-md">
-        <ul className="flex justify-around gap-x-2 sm:gap-x-4 w-full max-w-screen-md">
+    <header className="fixed top-0 flex justify-center w-full z-10">
+      <a href="#main" className="absolute left-0 top-0 py-2 px-4 z-50 -translate-y-full focus:translate-y-0 transition" tabIndex={0}>Skip to main content</a>
+
+      <nav className="py-4">
+        <ul className="p-2 bg-[--header-background] rounded-full backdrop-blur-sm shadow-md flex justify-around gap-x-2 sm:gap-x-4 max-w-screen-md">
           {listItemElements}
         </ul>
       </nav>

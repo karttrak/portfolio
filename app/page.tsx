@@ -29,38 +29,39 @@ export default function Home() {
 
   return (
     <>
-      {/* HERO SECTION START */}
-      <section className="relative flex flex-wrap justify-center items-center gap-y-12 gap-x-20 py-24 sm:py-56 px-8 w-full min-h-min">
-        {starIcons}
-        <div className="relative m-auto md:m-0 md:w-2/3 max-w-[32rem] text-center text-4xl font-genos font-medium z-2">
-          <div className="absolute w-[110%] h-[110%] -left-[5%] -top-[5%] bg-[--background] blur-xl rounded-xl"></div>
-          <h1 className="relative text-5xl text-[--heading]">
-            Kyle Thornburgh
-          </h1>
-          <h2 className="relative text-4xl">Full-stack engineer</h2>
-          <p className="relative text-3xl text-pretty">
-            I love crafting clean code and intuitive designs for modern applications.
-          </p>
-        </div>
-        <div className="relative m-auto md:m-0 w-64 h-60 -z-1">
-          <div className="absolute w-[110%] h-[110%] -left-[5%] -top-[5%] bg-[--background] blur-xl rounded-full"></div>
-          <Image
-            className="relative w-64 h-60 -z-1"
-            src="/sloth.svg"
-            alt="An illustration of a sloth floating in space."
-            width={256}
-            height={240}
-            priority
-          />
-        </div>
-      </section >
-      {/* HERO SECTION END */}
-
       <div id="stars" className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden pointer-events-none -z-20">
         {starIconsLeftMargin}
         {starIconsRightMargin}
       </div>
+
       <main id="main" className="relative flex flex-col gap-20 items-center md:items-start px-4 sm:px-8 w-full max-w-screen-xl">
+        {/* HERO SECTION START */}
+        <section className="relative flex flex-wrap justify-center items-center gap-y-12 gap-x-20 py-24 sm:py-56 px-8 w-full min-h-min">
+          {starIcons}
+          <div className="relative m-auto md:m-0 md:w-2/3 max-w-[32rem] text-center text-4xl font-genos font-medium z-2">
+            <div className="absolute w-[110%] h-[110%] -left-[5%] -top-[5%] bg-[--background] blur-xl rounded-xl"></div>
+            <h1 className="relative text-5xl text-[--heading]">
+              Kyle Thornburgh
+              <span className="block text-4xl text-foreground">Full-stack engineer</span>
+            </h1>
+            <p className="relative text-3xl text-pretty">
+              I love crafting clean code and intuitive designs for modern applications.
+            </p>
+          </div>
+          <div className="relative m-auto md:m-0 w-64 h-60 -z-1">
+            <div className="absolute w-[110%] h-[110%] -left-[5%] -top-[5%] bg-[--background] blur-xl rounded-full"></div>
+            <Image
+              className="relative w-64 h-60 -z-1"
+              src="/sloth.svg"
+              alt="An illustration of a sloth floating in space."
+              width={256}
+              height={240}
+              priority
+            />
+          </div>
+        </section >
+        {/* HERO SECTION END */}
+
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-[--background] blur-xl rounded-xl -z-10"></div>
 
         {/* ABOUT SECTION START */}
@@ -114,6 +115,7 @@ export default function Home() {
           <Project
             title="Pheasant Field B&B Website"
             imageUrl="/projects/pheasant-field-thumbnail.png"
+            altText="Homepage of Pheasant Field Bed and Breakfast website showcasing a bench facing a pond with a fountain in the distance."
             linkUrl="https://pheasantfield.com/"
           >
             <p>
@@ -123,6 +125,7 @@ export default function Home() {
           <Project
             title="Fundrise Transactions page"
             imageUrl="/projects/fundrise-desktop.png"
+            altText="Fundrise Transactions page showing a list of pending and completed transactions along with their details."
           >
             <p>
               I implemented the redesign of the Transactions page for <a href="https://fundrise.com" target="_blank" rel="noopener noreferrer">Fundrise</a>, enhancing usability and user experience on both mobile and desktop platforms. Transaction details are initially hidden for ease of navigation, with users able to expand them as needed, ensuring a seamless and intuitive experience for investors. The project utilized Java and MySQL for the backend, with AngularJS powering the frontend.
@@ -131,6 +134,7 @@ export default function Home() {
           <Project
             title="Salvatore Ferragamo location pages"
             imageUrl="/projects/ferragamo-showcase.jpg"
+            altText="A details page of a Salvatore Ferragamo store, displaying location details such as address, contact information, and hours of operation."
           >
             <p>
               Developed as part of Yext&apos;s <a href="https://www.yext.com/platform/pages" target="_blank" rel="noopener noreferrer">Pages</a> product, this project is a fully responsive website that helps users locate their nearest Ferragamo store and view key store details. Built using Soy templates, SCSS, and CoffeeScript, the website is optimized for local SEO and adheres to WCAG 2.0 Level AA accessibility standards, ensuring a seamless and inclusive user experience.

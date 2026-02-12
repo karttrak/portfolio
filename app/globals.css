@@ -41,7 +41,7 @@ h3 {
 a:not(nav a) {
   @apply text-sky-600;
   @apply dark:text-blue-400;
-  @apply hover:underline;
+  @apply underline;
   @apply hover:underline-offset-4;
 }
 

@@ -4,7 +4,7 @@ type Props = {
 
 export default function CircleSvg(props: Props) {
   return (
-    <svg className={props.className} fill="currentColor" strokeWidth="1" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" viewBox="-16 -16 32 32" xmlns="http://www.w3.org/2000/svg">
+    <svg className={props.className} fill="currentColor" strokeWidth="1" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" viewBox="-16 -16 32 32" role="img" aria-labelledby="theme-toggle-moon" xmlns="http://www.w3.org/2000/svg">
       <path id="moon" d="
         M -6, -10
         A 13 13, 0, 1, 0, 10 6

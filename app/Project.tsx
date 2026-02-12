@@ -5,6 +5,7 @@ type Props = {
   title: string,
   imageUrl: string,
   children: React.ReactNode,
+  altText?: string,
   linkUrl?: string,
   className?: string
 }
@@ -25,7 +26,7 @@ export default function Project(props: Props) {
             height={32}
           />
           <Image src={props.imageUrl}
-            alt={`Thumbnail image of ${props.title}`}
+            alt={`${props.altText ? props.altText : props.title}`}
             className="w-full max-h-96 lg:max-h-80 xl:max-h-64 object-cover object-top shadow-lg"
             width={550}
             height={300}
