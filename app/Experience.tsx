@@ -71,7 +71,18 @@ export default function Experience() {
       <div className={clsx(containerClasses, "slide-in-left")}>
         <div className={contentWrapperClasses}>
           <h3 className="mb-8 w-full text-center lg:text-left text-4xl sm:text-5xl font-medium">Entrepreneurship</h3>
-          {"Since 2019, I have been self-employed through a wide spectrum of ventures. First, I managed the operations for a last-mile delivery company (Freedom Analytics), then operations and finances for a traditional bed and breakfast (Pheasant Field), and most recently have taken on clients doing freelance WordPress development (Petal Forge). At Freedom Analytics, I managed a team of up to 100 employees and developed automated processes to streamline operations and drive efficiency. At Pheasant Field B&B, I oversee day-to-day operations and guest services, ensuring exceptional experiences for both customers and staff. At Petal Forge, I take projects from concept to launch, delivering sites that increase traffic and engagement. These ventures have strengthened my strategic thinking, team leadership, and adaptability—skills that complement my technical expertise and prepare me for success in software engineering roles."}
+          <p>
+            Since 2019, I&apos;ve built and operated businesses across logistics, hospitality, and now web development. I began by leading operations for a last-mile delivery company, managing a team of nearly 100 employees and implementing automated systems to improve efficiency and scale. I then oversaw operations for a traditional bed and breakfast, refining processes and delivering consistently exceptional guest experiences.
+          </p>
+
+          <p>
+            Most recently, I created <a href="https://petalforgestudio.com/?utm_source=thornburgh" target="_blank" rel="noopener">Petal Forge</a>, a freelance web development studio where I design and build high-performing WordPress websites from concept to launch. I partner with clients to create fast, modern, and scalable sites that drive traffic and engagement.
+          </p>
+
+          <p>
+            Across these ventures, I&apos;ve developed strong strategic thinking, operational discipline, and client-focused execution &ndash; skills that directly inform my approach to building reliable, impactful software.
+          </p>
+
         </div>
 
         <div className={imageWrapperClasses}>
