@@ -93,7 +93,7 @@ export default function Home() {
             linkUrl="https://pheasantfield.com/"
           >
             <p>
-              Designed and developed the website for <a href="https://pheasantfield.com/" target="_blank" rel="noopener">Pheasant Field Bed and Breakfast</a> using WordPress with custom CSS for a clean, responsive, and accessible user experience. Optimized for mobile and ADA compliance, the site integrates booking tools and SEO best practices to boost online visibility. This project showcases my ability to combine technical skills and business insight to create effective, user-friendly web solutions.
+              Designed and developed the website for <a href="https://pheasantfield.com/?utm_source=thornburgh" target="_blank" rel="noopener">Pheasant Field Bed and Breakfast</a> using WordPress with custom CSS for a clean, responsive, and accessible user experience. Optimized for mobile and ADA compliance, the site integrates booking tools and SEO best practices to boost online visibility. This project showcases my ability to combine technical skills and business insight to create effective, user-friendly web solutions.
             </p>
           </Project>
           <Project
@@ -102,7 +102,7 @@ export default function Home() {
             altText="Fundrise Transactions page showing a list of pending and completed transactions along with their details."
           >
             <p>
-              I implemented the redesign of the Transactions page for <a href="https://fundrise.com" target="_blank" rel="noopener noreferrer">Fundrise</a>, enhancing usability and user experience on both mobile and desktop platforms. Transaction details are initially hidden for ease of navigation, with users able to expand them as needed, ensuring a seamless and intuitive experience for investors. The project utilized Java and MySQL for the backend, with AngularJS powering the frontend.
+              I implemented the redesign of the Transactions page for <a href="https://fundrise.com" target="_blank" rel="noopener">Fundrise</a>, enhancing usability and user experience on both mobile and desktop platforms. Transaction details are initially hidden for ease of navigation, with users able to expand them as needed, ensuring a seamless and intuitive experience for investors. The project utilized Java and MySQL for the backend, with AngularJS powering the frontend.
             </p>
           </Project>
           <Project
@@ -111,7 +111,7 @@ export default function Home() {
             altText="A details page of a Salvatore Ferragamo store, displaying location details such as address, contact information, and hours of operation."
           >
             <p>
-              Developed as part of Yext&apos;s <a href="https://www.yext.com/platform/pages" target="_blank" rel="noopener noreferrer">Pages</a> product, this project is a fully responsive website that helps users locate their nearest Ferragamo store and view key store details. Built using Soy templates, SCSS, and CoffeeScript, the website is optimized for local SEO and adheres to WCAG 2.0 Level AA accessibility standards, ensuring a seamless and inclusive user experience.
+              Developed as part of Yext&apos;s <a href="https://www.yext.com/platform/pages" target="_blank" rel="noopener">Pages</a> product, this project is a fully responsive website that helps users locate their nearest Ferragamo store and view key store details. Built using Soy templates, SCSS, and CoffeeScript, the website is optimized for local SEO and adheres to WCAG 2.0 Level AA accessibility standards, ensuring a seamless and inclusive user experience.
             </p>
           </Project>
         </Section>
