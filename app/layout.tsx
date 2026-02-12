@@ -45,8 +45,6 @@ export default function RootLayout({
       <body className={`relative grid gap-8 place-items-center min-h-screen pt-20 overflow-x-hidden ${genosSans.variable} antialiased transition-colors`}>
 
         <PostHogProvider>
-          <a href="#main" className="absolute left-0 top-0 py-2 px-4 z-50 -translate-y-full focus:translate-y-0 transition" tabIndex={0}>Skip to main content</a>
-
           <Header />
           {children}
           <Footer />
