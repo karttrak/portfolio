@@ -6,27 +6,6 @@
       "I'm a versatile software engineer with a passion for creating quality products. Over the years, I've honed my skills in web development, team management, and process automation. Whether I'm streamlining operations or developing modern applications, I bring creativity, precision, and dedication to every project. Outside of coding, I'm a proud chicken dad, a PC builder, and a beginner gardener."
     ]
   },
-  "yext": {
-    "title": "Yext",
-    "headingLevel": 3,
-    "paragraphs": [
-      "I specialized in delivering custom store locator websites for major brands, such as Saks Fifth Avenue, Macy's, and Sleep Number, optimizing them for local SEO to enhance visibility and user engagement. Working on tight deadlines, I consistently completed high-quality, multi-page websites in just 2-3 weeks. To improve internal workflow, I developed a CLI tool using Go and Bash that automated syncing localization files by interfacing with the Smartling API. Additionally, I collaborated with Android and iOS developers around the world to integrate Yext's advertising SDK into apps with a combined 5 million monthly active users."
-    ]
-  },
-  "fundrise": {
-    "title": "Fundrise",
-    "headingLevel": 3,
-    "paragraphs": [
-      "I co-designed and implemented the User Account Levels feature from the ground up, tailoring offerings to customers based on their portfolio holdings to drive increased investment activity. This long-term initiative involved developing multiple suites of automated onboarding emails to engage users and encourage them to explore newly available features. Additionally, I overhauled the Transactions page to enhance clarity and usability. Collaborating with the Accounting and Real Estate departments, I created internal reporting tools that empowered data-driven decision-making and significantly boosted company efficiency."
-    ]
-  },
-  "entrepreneur": {
-    "title": "Entrepreneurship",
-    "headingLevel": 3,
-    "paragraphs": [
-      "Since 2019, I have been self-employed through a wide spectrum of ventures. First, I managed the operations for a last-mile delivery company (Freedom Analytics), then operations and finances for a traditional bed and breakfast (Pheasant Field), and most recently have taken on clients doing freelance WordPress development (Petal Forge). At Freedom Analytics, I managed a team of up to 100 employees and developed automated processes to streamline operations and drive efficiency. At Pheasant Field B&B, I oversee day-to-day operations and guest services, ensuring exceptional experiences for both customers and staff. At Petal Forge, I take projects from concept to launch, delivering sites that increase traffic and engagement. These ventures have strengthened my strategic thinking, team leadership, and adaptability—skills that complement my technical expertise and prepare me for success in software engineering roles."
-    ]
-  },
   "next": {
     "title": "What's next",
     "headingLevel": 2,

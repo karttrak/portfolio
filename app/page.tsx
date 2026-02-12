@@ -2,6 +2,7 @@ import Image from "next/image";
 
 // Page sections
 import Skills from "./Skills";
+import Experience from "./Experience";
 import Project from "./Project";
 
 // Reusable components
@@ -78,34 +79,7 @@ export default function Home() {
         </section>
         {/* ABOUT SECTION END */}
 
-        <h2 id="experience" className="mt-12 w-full text-center text-5xl text-[--heading] font-medium slide-in-left">Experience</h2>
-
-        <TextSection {...sections.yext}>
-          <Image
-            src="./ufo.svg"
-            alt="An illustration of a UFO."
-            width={300}
-            height={300}
-          />
-        </TextSection>
-
-        <TextSection {...sections.fundrise} reverse={true}>
-          <Image
-            src="./jupiter.svg"
-            alt="An illustration of Jupiter."
-            width={300}
-            height={300}
-          />
-        </TextSection>
-
-        <TextSection {...sections.entrepreneur}>
-          <Image
-            src="./rocket-ship.svg"
-            alt="An illustration of a rocket ship."
-            width={300}
-            height={300}
-          />
-        </TextSection>
+        <Experience />
 
         <Section
           className="gap-y-16"
