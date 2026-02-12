@@ -32,10 +32,10 @@ export default function ThemeSelector() {
     <div className="flex items-center text-base">
       <div className="relative flex items-center gap-4 p-2 rounded bg-slate-300 dark:bg-slate-700">
         <span className={`absolute top-1 ${classLeft} transition-all w-8 h-8 bg-slate-400 dark:bg-slate-600 rounded`}></span>
-        <button onClick={toggleTheme} className="relative w-6 h-6 z-1" aria-label="Toggle between light and dark theme.">
+        <button id="theme-toggle-moon" onClick={toggleTheme} className="relative w-6 h-6 z-1" aria-label="Toggle between light and dark theme.">
           <MoonSvg />
         </button>
-        <button onClick={toggleTheme} className="relative w-6 h-6" aria-label="Toggle between light and dark theme.">
+        <button id="theme-toggle-sun" onClick={toggleTheme} className="relative w-6 h-6" aria-label="Toggle between light and dark theme.">
           <SunSvg />
         </button>
       </div>
