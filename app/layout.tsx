@@ -13,7 +13,7 @@ const genosSans = Genos({
 });
 
 export const metadata: Metadata = {
-  title: "Kyle Thornburgh | Software Engineer",
+  title: "Kyle Thornburgh | Full-Stack Software Engineer",
   description: "I'm Kyle, a full-stack engineer who loves crafting clean code and intuitive designs for modern applications",
 };
 
