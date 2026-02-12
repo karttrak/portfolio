@@ -115,6 +115,7 @@ export default function Home() {
           <Project
             title="Pheasant Field B&B Website"
             imageUrl="/projects/pheasant-field-thumbnail.png"
+            altText="Homepage of Pheasant Field Bed and Breakfast website showcasing a bench facing a pond with a fountain in the distance."
             linkUrl="https://pheasantfield.com/"
           >
             <p>
@@ -124,6 +125,7 @@ export default function Home() {
           <Project
             title="Fundrise Transactions page"
             imageUrl="/projects/fundrise-desktop.png"
+            altText="Fundrise Transactions page showing a list of pending and completed transactions along with their details."
           >
             <p>
               I implemented the redesign of the Transactions page for <a href="https://fundrise.com" target="_blank" rel="noopener noreferrer">Fundrise</a>, enhancing usability and user experience on both mobile and desktop platforms. Transaction details are initially hidden for ease of navigation, with users able to expand them as needed, ensuring a seamless and intuitive experience for investors. The project utilized Java and MySQL for the backend, with AngularJS powering the frontend.
@@ -132,6 +134,7 @@ export default function Home() {
           <Project
             title="Salvatore Ferragamo location pages"
             imageUrl="/projects/ferragamo-showcase.jpg"
+            altText="A details page of a Salvatore Ferragamo store, displaying location details such as address, contact information, and hours of operation."
           >
             <p>
               Developed as part of Yext&apos;s <a href="https://www.yext.com/platform/pages" target="_blank" rel="noopener noreferrer">Pages</a> product, this project is a fully responsive website that helps users locate their nearest Ferragamo store and view key store details. Built using Soy templates, SCSS, and CoffeeScript, the website is optimized for local SEO and adheres to WCAG 2.0 Level AA accessibility standards, ensuring a seamless and inclusive user experience.
