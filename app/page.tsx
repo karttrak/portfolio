@@ -35,13 +35,13 @@ export default function Home() {
         {starIconsRightMargin}
       </div>
 
-      <main id="main" className="relative flex flex-col gap-20 items-center md:items-start px-4 sm:px-8 w-full max-w-screen-xl">
+      <main id="main" className="relative flex flex-col gap-20 items-center md:items-start px-4 sm:px-8 w-full max-w-(--breakpoint-xl)">
         {/* HERO SECTION START */}
         <section className="relative flex flex-wrap justify-center items-center gap-y-12 gap-x-20 py-24 sm:py-56 px-8 w-full min-h-min">
           {starIcons}
-          <div className="relative m-auto md:m-0 md:w-2/3 max-w-[32rem] text-center text-4xl font-genos font-medium z-2">
-            <div className="absolute w-[110%] h-[110%] -left-[5%] -top-[5%] bg-[--background] blur-xl rounded-xl"></div>
-            <h1 className="relative text-5xl text-[--heading]">
+          <div className="relative m-auto md:m-0 md:w-2/3 max-w-lg text-center text-4xl font-genos font-medium z-2">
+            <div className="absolute w-[110%] h-[110%] left-[-5%] top-[-5%] bg-(--background) blur-xl rounded-xl"></div>
+            <h1 className="relative text-5xl text-(--heading)">
               Kyle Thornburgh
               <span className="block text-4xl text-foreground">Full-stack engineer</span>
             </h1>
@@ -50,9 +50,9 @@ export default function Home() {
             </p>
           </div>
           <div className="relative m-auto md:m-0 w-64 h-60 -z-1">
-            <div className="absolute w-[110%] h-[110%] -left-[5%] -top-[5%] bg-[--background] blur-xl rounded-full"></div>
+            <div className="absolute w-[110%] h-[110%] left-[-5%] top-[-5%] bg-(--background) blur-xl rounded-full"></div>
             <Image
-              className="relative w-64 h-60 -z-1"
+              className="relative w-64 h-60 z-1"
               src="/sloth.svg"
               alt="An illustration of a sloth floating in space."
               width={256}
@@ -63,11 +63,11 @@ export default function Home() {
         </section >
         {/* HERO SECTION END */}
 
-        <div className="absolute top-0 left-0 right-0 bottom-0 bg-[--background] blur-xl rounded-xl -z-10"></div>
+        <div className="absolute top-0 left-0 right-0 bottom-0 bg-(--background) blur-xl rounded-xl -z-10"></div>
 
         {/* ABOUT SECTION START */}
         <section className="flex flex-col md:flex-wrap md:flex-row justify-center items-center gap-y-12 md:gap-y-0 md:gap-x-12 lg:gap-x-20 w-full py-8">
-          <h2 id="about" className="lg:mb-12 w-full text-center text-5xl text-[--heading] font-medium">{sections.about.title}</h2>
+          <h2 id="about" className="lg:mb-12 w-full text-center text-5xl text-(--heading) font-medium">{sections.about.title}</h2>
 
           <div className="max-w-[70ch] flex-1">
             <p className="text-pretty">{sections.about.paragraphs}</p>

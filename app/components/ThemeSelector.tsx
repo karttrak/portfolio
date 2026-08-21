@@ -30,8 +30,8 @@ export default function ThemeSelector() {
 
   return (
     <div className="flex items-center text-base">
-      <div className="relative flex items-center gap-4 p-2 rounded bg-slate-300 dark:bg-slate-700">
-        <span className={`absolute top-1 ${classLeft} transition-all w-8 h-8 bg-slate-400 dark:bg-slate-600 rounded`}></span>
+      <div className="relative flex items-center gap-4 p-2 rounded-sm bg-slate-300 dark:bg-slate-700">
+        <span className={`absolute top-1 ${classLeft} transition-all w-8 h-8 bg-slate-400 dark:bg-slate-600 rounded-sm`}></span>
         <button id="theme-toggle-moon" onClick={toggleTheme} className="relative w-6 h-6 z-1" aria-label="Toggle between light and dark theme.">
           <MoonSvg />
         </button>

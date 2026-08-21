@@ -32,7 +32,7 @@ export default function Header() {
       <a href="#main" className="absolute left-0 top-0 py-2 px-4 z-50 -translate-y-full focus:translate-y-0 transition" tabIndex={0}>Skip to main content</a>
 
       <nav className="py-4">
-        <ul className="p-2 bg-[--header-background] rounded-full backdrop-blur-sm shadow-md flex justify-around gap-x-2 sm:gap-x-4 max-w-screen-md">
+        <ul className="p-2 bg-(--header-background) rounded-full backdrop-blur-xs shadow-md flex justify-around gap-x-2 sm:gap-x-4 max-w-(--breakpoint-md)">
           {listItemElements}
         </ul>
       </nav>
