@@ -1,4 +1,4 @@
-type StarSvg = {
+type StarSvgStyle = {
   top: string,
   left: string,
   width: number,
@@ -7,25 +7,27 @@ type StarSvg = {
   fill: string,
 }
 
-type StarSvgOverrides = Partial<StarSvg>
+type StarSvgProps = {
+  topRange?: [number, number],
+  leftRange?: [number, number],
+}
 
-export default function StarSvg(props: StarSvgOverrides) {
-  const width = props.width || Math.floor(Math.random() * 40) + 20;
-  const height = props.height || width;
+function randomStarStyle(topRange: [number, number], leftRange: [number, number]): StarSvgStyle {
+  const width = Math.floor(Math.random() * 40) + 20;
+  const height = width;
 
-  const defaults: StarSvg = {
-    top: `calc(${Math.floor(Math.random() * 90) + 10}% - ${width / 2}px)`,
-    left: `calc(${Math.floor(Math.random() * 90) + 10}% - ${height / 2}px)`,
+  return {
+    top: `calc(${Math.floor(Math.random() * (topRange[1] - topRange[0])) + topRange[0]}% - ${width / 2}px)`,
+    left: `calc(${Math.floor(Math.random() * (leftRange[1] - leftRange[0])) + leftRange[0]}% - ${height / 2}px)`,
     width: width,
     height: height,
     transform: `rotate(${Math.floor(Math.random() * 90)}deg)`,
     fill: "var(--star-color)",
-    ...props
   }
+}
 
-  const styles = {
-    ...defaults
-  }
+export default function StarSvg({ topRange = [10, 90], leftRange = [10, 90] }: StarSvgProps) {
+  const styles = randomStarStyle(topRange, leftRange);
 
   return (
     <svg className="absolute h-auto -z-1" style={styles} viewBox="0 0 137.32 142.85" aria-hidden>

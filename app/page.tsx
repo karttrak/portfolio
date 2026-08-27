@@ -14,19 +14,13 @@ import StarSvg from "./components/StarSvg";
 import sections from "./homepage.json"
 
 export default function Home() {
-  const starIcons = new Array(20).fill(0).map((_, i) => <StarSvg key={i} />)
-  const starIconsLeftMargin = new Array(20).fill(0).map((_, i) => {
-    return <StarSvg key={i}
-      top={`calc(${Math.floor(Math.random() * 100)}% - 20px)`}
-      left={`calc(${Math.floor(Math.random() * 20)}% - 20px)`}
-    />
-  })
-  const starIconsRightMargin = new Array(20).fill(0).map((_, i) => {
-    return <StarSvg key={i}
-      top={`calc(${Math.floor(Math.random() * 100)}% - 20px)`}
-      left={`calc(${Math.floor(Math.random() * 20) + 80}% - 20px)`}
-    />
-  })
+  const starIconsHeroBackground = new Array(20).fill(0).map((_, i) => <StarSvg key={i} />)
+  const starIconsLeftMargin = new Array(20).fill(0).map((_, i) => (
+    <StarSvg key={i} topRange={[0, 100]} leftRange={[0, 20]} />
+  ))
+  const starIconsRightMargin = new Array(20).fill(0).map((_, i) => (
+    <StarSvg key={i} topRange={[0, 100]} leftRange={[80, 100]} />
+  ))
 
   return (
     <>
@@ -38,7 +32,7 @@ export default function Home() {
       <main id="main" className="relative flex flex-col gap-20 items-center md:items-start px-4 sm:px-8 w-full max-w-(--breakpoint-xl)">
         {/* HERO SECTION START */}
         <section className="relative flex flex-wrap justify-center items-center gap-y-12 gap-x-20 py-24 sm:py-56 px-8 w-full min-h-min">
-          {starIcons}
+          {starIconsHeroBackground}
           <div className="relative m-auto md:m-0 md:w-2/3 max-w-lg text-center text-4xl font-genos font-medium z-2">
             <div className="absolute w-[110%] h-[110%] left-[-5%] top-[-5%] bg-(--background) blur-xl rounded-xl"></div>
             <h1 className="relative text-5xl text-(--heading)">
